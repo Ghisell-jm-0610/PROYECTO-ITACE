@@ -1,0 +1,454 @@
+/* ESTILO GENERAL */
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #271a1d;
+    background-color: #faf6f2;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+a {
+    color: #5e021f;
+}
+h1, h2, h3 {
+    font-family: Georgia, serif;
+    color: #3f0115;
+    margin-bottom: 15px;
+}
+h1 {
+    font-size: 48px;
+}
+h2 {
+    font-size: 32px;
+}
+h3 {
+    font-size: 19px;
+}
+/* ESTRUCTURA PRINCIPAL */
+.pagina {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    min-height: 100vh;
+}
+.contenido {
+    min-width: 0;
+}
+/* CARRUSEL */
+#instalaciones .carrusel-instalaciones {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 25px;
+    margin: 30px 0;
+    padding: 25px;
+    background: #3f0115;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#instalaciones .zona-tarjetas {
+    position: relative;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#instalaciones .tarjeta-carrusel {
+    position: absolute;
+    width: 85%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #5e021f;
+    box-shadow: 0 15px 30px #271a1d;
+    transition: transform .6s ease, opacity .6s ease;
+}
+
+#instalaciones .tarjeta-carrusel img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-height: none;
+    object-fit: cover;
+    border-radius: 0;
+    clip-path: none;
+    filter: grayscale(100%);
+    transition: filter .5s ease;
+}
+
+#instalaciones .tarjeta-carrusel.activa img {
+    filter: grayscale(0%);
+}
+
+#instalaciones .controles-carrusel {
+     display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 35px;
+}
+
+#instalaciones .control-carrusel {
+      width: 38px;
+    height: 38px;
+    border: 1px solid #eadde0;
+    border-radius: 50%;
+    background: white;
+    color: var(--naranja2);
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s
+}
+
+#instalaciones .numero-carrusel {
+    margin-bottom: 8px;
+    color: #5e021f;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+#instalaciones .informacion-carrusel h3 {
+    margin-bottom: 8px;
+    color: #5e021f;
+    font-size: 28px;
+}
+
+#instalaciones .tipo-carrusel {
+    margin-bottom: 20px;
+    color: #5e021f;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+#instalaciones .texto-carrusel {
+    max-height: 220px;
+    overflow-y: auto;
+    padding-right: 8px;
+}
+
+@media (max-width: 700px) {
+    #instalaciones .carrusel-instalaciones {
+        grid-template-columns: 1fr;
+    }
+
+    #instalaciones .zona-tarjetas {
+        height: 280px;
+    }
+
+    #instalaciones .tarjeta-carrusel {
+        height: 210px;
+    }
+}
+
+#instalaciones .control-carrusel:hover {
+    background: #3f0115;
+    color: white;
+
+}
+/* BARRA LATERAL */
+.lateral {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 30px 22px;
+    background-color: #5e021f;
+    color: white;
+}
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: white;
+    text-decoration: none;
+}
+.logo {
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
+    background-color: white;
+    border-radius: 50%;
+}
+.marca-texto {
+    font-family: Georgia, serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+.marca-texto small {
+    display: block;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+}
+.lateral nav {
+    display: flex;
+    flex-direction: column;
+}
+.lateral nav a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+.lateral nav a:hover {
+    background-color: #710d30;
+}
+.lateral-contacto {
+    margin-top: auto;
+    padding-top: 16px;
+    border-top: 1px solid #a76b7d;
+    font-size: 15px;
+}
+.lateral-contacto p {
+    margin: 0;
+}
+.lateral-contacto a {
+    color: #d9a441;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 17px;
+}
+/* IMÁGENES */
+figure {
+    margin: 0;
+}
+figure img,
+.lista-esp img {
+    width: 100%;
+    object-fit: cover;
+    background-color: #f3e9e6;
+    border: 2px solid #e0cfcb;
+}
+/* BOTONES */
+.boton {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #5e021f;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.boton:hover {
+    background-color: #3f0115;
+}
+/* INICIO */
+.inicio-imagen img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-bottom: 2px solid #e0cfcb;
+}
+.inicio-cuerpo {
+    max-width: 760px;
+    padding: 40px 50px;
+}
+.inicio-cuerpo h1 {
+    font-size: 32px;
+}
+.inicio-cuerpo p {
+    font-size: 18px;
+}
+/* MÁS QUE UNA ESCUELA */
+.comunidad-itace {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    padding: 70px 8%;
+    background-image: linear-gradient(
+        rgba(35, 0, 12, 0.8),
+        rgba(63, 1, 21, 0.5)
+    ), url("nosotros 5B.jpeg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+.comunidad-contenido {
+    max-width: 650px;
+}
+.comunidad-etiqueta {
+    display: block;
+    color: #d9a441;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.comunidad-contenido h1 {
+    color: white;
+    font-size: 55px;
+    margin-bottom: 24px;
+}
+.comunidad-contenido p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+.comunidad-enlace {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px solid #d9a441;
+    padding-bottom: 7px;
+}
+.comunidad-enlace:hover {
+    color: #d9a441;
+}
+/* DATOS DEL PLANTEL */
+.datos-plantel {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #3f0115;
+    color: white;
+}
+.datos-plantel div {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 22px 18px;
+    border-right: 1px solid #70404e;
+}
+.datos-plantel dt {
+    font-size: 14px;
+}
+.datos-plantel dd {
+    margin: 0 0 5px;
+    font-family: Georgia, serif;
+    font-size: 27px;
+    font-weight: bold;
+    color: #d9a441;
+}
+/* SECCIONES */
+.bloque {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 32px;
+    padding: 55px 50px;
+    border-bottom: 1px solid #e0cfcb;
+}
+.fondo {
+    background-color: #f3e9e6;
+}
+.titulo-lateral {
+    position: sticky;
+    top: 24px;
+    align-self: start;
+}
+.titulo-lateral p {
+    color: #6b5a5e;
+    font-size: 15px;
+}
+.bloque-cuerpo {
+    max-width: 720px;
+}
+.bloque-cuerpo figure img {
+    height: 240px;
+    margin-bottom: 22px;
+}
+.bloque-cuerpo p {
+    max-width: 38em;
+}
+/* ESPECIALIDADES */
+.lista-esp {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.lista-esp li {
+    padding: 18px;
+    border: 1px solid #e0cfcb;
+    background-color: #faf6f2;
+}
+.lista-esp img {
+    width: 100%;
+    height: 170px;
+    margin-bottom: 16px;
+    object-fit: cover;
+}
+.lista-esp h3 {
+    margin-bottom: 10px;
+}
+.lista-esp li p {
+    margin: 0;
+    line-height: 1.6;
+}
+.nota, .pendiente {
+    color: #6b5a5e;
+}
+.nota {
+    font-size: 14px;
+    margin-top: 20px;
+}
+/* UBICACIÓN */
+.ubicacion {
+    padding: 50px;
+    background-color: #f3e9e6;
+}
+.mapa img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.tarjeta-dir {
+    max-width: 420px;
+    margin: 20px 0 0 25px;
+    padding: 25px;
+    background-color: white;
+    border-top: 4px solid #d9a441;
+    box-shadow: 0 5px 15px #d0c1c1;
+}
+.tarjeta-dir h2 {
+    margin-bottom: 10px;
+}
+/* CONTACTO */
+.contacto {
+    padding: 55px 50px;
+    background-color: #5e021f;
+    color: white;
+}
+.contacto h2,
+.contacto h3 {
+    color: white;
+}
+.contacto a {
+    color: #d9a441;
+}
+.contacto-cols {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    margin-top: 24px;
+}
+.contacto p {
+    margin-bottom: 10px;
+}
+.etq {
+    font-size: 14px;
+    color: #e0cfcb;
+    margin: 18px 0 3px;
+}
+/* PIE DE PÁGINA */
+.pie {
+    padding: 28px 50px;
+    background-color: #3f0115;
+    color: #e8d9dc;
+    font-size: 15px;
+}
+.pie p {
+    margin: 5px 0;
+}
+.pie .aviso {
+    color: #d0b9c0;
+    font-size: 14px;
+}
