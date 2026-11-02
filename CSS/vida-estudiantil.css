@@ -1,0 +1,124 @@
+/* VIDA ESTUDIANTIL */
+
+.vida-estudiantil {
+    width: 100%;
+    padding: 60px 8%;
+    background-color: #f8f7f5;
+    color: #333;
+}
+
+.vida-estudiantil h1 {
+    color: #750d2b;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.vida-estudiantil > p {
+    max-width: 1000px;
+    margin: 0 auto 30px;
+    color: #555;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.vida-estudiantil h2 {
+    color: #750d2b;
+    font-size: 1.7rem;
+    margin: 40px 0 18px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #e8bd3f;
+}
+
+.contenedor-vida {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    max-width: 1200px;
+    margin: 40px auto 0;
+}
+
+.tarjeta-vida {
+    background-color: #fff;
+    border: 1px solid #e8e2e3;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-vida:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(117, 13, 43, 0.15);
+}
+
+.tarjeta-vida img {
+    display: block;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.tarjeta-vida h3 {
+    color: #750d2b;
+    font-size: 1.3rem;
+    margin: 20px 20px 12px;
+}
+
+.tarjeta-vida p {
+    color: #555;
+    font-size: 0.98rem;
+    line-height: 1.7;
+    text-align: justify;
+    margin: 0 20px 22px;
+}
+
+/* DISEÑO RESPONSIVO */
+
+@media (max-width: 768px) {
+    .vida-estudiantil {
+        padding: 40px 5%;
+    }
+
+    .vida-estudiantil h1 {
+        font-size: 2rem;
+    }
+
+    .vida-estudiantil h2 {
+        font-size: 1.45rem;
+    }
+
+    .contenedor-vida {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .tarjeta-vida img {
+        height: 220px;
+    }
+}
+
+@media (max-width: 480px) {
+    .vida-estudiantil h1 {
+        font-size: 1.8rem;
+    }
+
+    .vida-estudiantil > p {
+        font-size: 0.95rem;
+    }
+
+    .tarjeta-vida img {
+        height: 190px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .tarjeta-vida {
+        transition: none;
+    }
+
+    .tarjeta-vida:hover {
+        transform: none;
+    }
+}

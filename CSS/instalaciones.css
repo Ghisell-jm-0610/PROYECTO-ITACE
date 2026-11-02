@@ -1,0 +1,303 @@
+/* VARIABLES */
+:root {
+    --guinda: #750d2b;
+    --guinda-oscuro: #45091c;
+    --guinda-claro: #963650;
+    --amarillo: #e8bd3f;
+    --amarillo-claro: #f7e7a6;
+    --blanco: #fff;
+    --fondo: #f8f7f5;
+    --texto: #333;
+    --gris: #686868;
+}
+/* PORTADA */
+.portada-instalaciones {
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 8%;
+    text-align: center;
+    color: var(--blanco);
+    background:
+        linear-gradient(rgba(69, 9, 28, 0.78), rgba(69, 9, 28, 0.78)),
+        url("../img/instalaciones/entrada.jpeg") center/cover no-repeat;
+}
+.contenido-portada-instalaciones {
+    max-width: 850px;
+}
+.contenido-portada-instalaciones p {
+    color: var(--amarillo-claro);
+    font-size: 0.9rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+}
+.contenido-portada-instalaciones h2 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    margin-bottom: 18px;
+}
+.contenido-portada-instalaciones span {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+/* INTRODUCCIÓN */
+.introduccion-instalaciones {
+    max-width: 850px;
+    margin: 65px auto;
+    padding: 0 25px;
+    text-align: center;
+}
+.etiqueta-instalaciones {
+    color: var(--guinda);
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+.introduccion-instalaciones h2 {
+    color: var(--guinda-oscuro);
+    font-size: 2.2rem;
+    margin-bottom: 18px;
+}
+.introduccion-instalaciones > p:last-child {
+    color: var(--gris);
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+/* SECCIONES */
+.seccion-espacios,
+.seccion-areas-verdes {
+    padding: 55px 0 70px;
+}
+.seccion-espacios {
+    background: var(--fondo);
+}
+.seccion-areas-verdes {
+    background: var(--blanco);
+}
+.titulo-seccion-instalaciones {
+    max-width: 850px;
+    margin: 0 auto 45px;
+    padding: 0 25px;
+    text-align: center;
+}
+.titulo-seccion-instalaciones h2 {
+    color: var(--guinda-oscuro);
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+.titulo-seccion-instalaciones > p:last-child {
+    color: var(--gris);
+    line-height: 1.7;
+    font-size: 1rem;
+}
+/* RECORRIDO DE INSTALACIONES */
+.recorrido-instalaciones {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+}
+/* SUBTÍTULOS */
+.subtitulo-recorrido {
+    grid-column: 1 / -1;
+    margin-top: 25px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid var(--amarillo);
+}
+.subtitulo-recorrido h3 {
+    color: var(--guinda);
+    font-size: 1.45rem;
+}
+/* FOTOGRAFÍAS */
+.instalacion-item {
+    position: relative;
+    height: 310px;
+    overflow: hidden;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.13);
+    background: var(--guinda-oscuro);
+}
+.instalacion-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.7s ease;
+}
+/* DESCRIPCIÓN SOBRE LA IMAGEN */
+.caption {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    text-align: center;
+    color: var(--blanco);
+    background: rgba(69, 9, 28, 0.86);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+.caption span {
+    color: var(--amarillo-claro);
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 13px;
+}
+.caption h3 {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+}
+.caption p {
+    max-width: 450px;
+    font-size: 0.98rem;
+    line-height: 1.6;
+}
+/* EFECTO AL PASAR EL CURSOR */
+.instalacion-item:hover .instalacion-img {
+    transform: scale(1.12);
+}
+.instalacion-item:hover .caption {
+    opacity: 1;
+}
+/* CIERRE */
+.cierre-instalaciones {
+    padding: 75px 25px;
+    color: var(--blanco);
+    text-align: center;
+    background:
+        linear-gradient(rgba(69, 9, 28, 0.94), rgba(69, 9, 28, 0.94)),
+        url("../img/instalaciones/explanada 2.jpeg") center/cover no-repeat;
+}
+.contenido-cierre-instalaciones {
+    max-width: 800px;
+    margin: auto;
+}
+.etiqueta-cierre-instalaciones {
+    color: var(--amarillo-claro);
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.contenido-cierre-instalaciones h2 {
+    font-size: 2.4rem;
+    margin: 15px 0;
+}
+.contenido-cierre-instalaciones > p {
+    color: #f1e9eb;
+    line-height: 1.8;
+    margin-bottom: 28px;
+}
+.botones-cierre-instalaciones {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.boton-oferta-instalaciones,
+.boton-conocenos-instalaciones {
+    display: inline-block;
+    padding: 13px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+.boton-oferta-instalaciones {
+    color: var(--guinda-oscuro);
+    background: var(--amarillo);
+}
+.boton-conocenos-instalaciones {
+    color: var(--blanco);
+    border: 2px solid var(--blanco);
+}
+.boton-oferta-instalaciones:hover {
+    background: var(--amarillo-claro);
+    transform: translateY(-3px);
+}
+.boton-conocenos-instalaciones:hover {
+    color: var(--guinda-oscuro);
+    background: var(--blanco);
+    transform: translateY(-3px);
+}
+/* TABLET */
+@media (max-width: 768px) {
+    .portada-instalaciones {
+        min-height: 350px;
+    }
+    .recorrido-instalaciones {
+        width: 94%;
+        gap: 18px;
+    }
+    .instalacion-item {
+        height: 260px;
+    }
+    .caption {
+        padding: 16px;
+    }
+    .caption h3 {
+        font-size: 1.2rem;
+    }
+    .caption p {
+        font-size: 0.88rem;
+    }
+    .titulo-seccion-instalaciones h2,
+    .introduccion-instalaciones h2 {
+        font-size: 1.9rem;
+    }
+}
+/* CELULAR */
+@media (max-width: 550px) {
+    .portada-instalaciones {
+        min-height: 320px;
+        padding: 45px 20px;
+    }
+    .contenido-portada-instalaciones span {
+        font-size: 0.95rem;
+    }
+    .introduccion-instalaciones {
+        margin: 45px auto;
+    }
+    .seccion-espacios,
+    .seccion-areas-verdes {
+        padding: 40px 0 50px;
+    }
+    .recorrido-instalaciones {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .instalacion-item {
+        height: 270px;
+    }
+    .subtitulo-recorrido h3 {
+        font-size: 1.25rem;
+    }
+    .contenido-cierre-instalaciones h2 {
+        font-size: 1.9rem;
+    }
+    .botones-cierre-instalaciones {
+        flex-direction: column;
+        align-items: center;
+    }
+    .boton-oferta-instalaciones,
+    .boton-conocenos-instalaciones {
+        width: 100%;
+        max-width: 280px;
+    }
+}
+/* ACCESIBILIDAD */
+@media (prefers-reduced-motion: reduce) {
+    .instalacion-img,
+    .caption,
+    .boton-oferta-instalaciones,
+    .boton-conocenos-instalaciones {
+        transition: none;
+    }
+}

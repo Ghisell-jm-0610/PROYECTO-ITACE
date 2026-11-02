@@ -6,6 +6,7 @@
     <title>ITACE | Plantel Reynosa</title>
     <meta name="description" content="Portal académico del ITACE Plantel Reynosa. Conoce nuestra oferta educativa, actividades, instalaciones y comunidad estudiantil.">
     <link rel="stylesheet" href="CSS/estilos ITACE.css">
+    <link rel="stylesheet" href="CSS/bienvenidos.css">
 </head>
 <body>
     <!-- Encabezado institucional -->
@@ -23,33 +24,38 @@
                 <p>Instituto Tamaulipeco de Capacitación para el Empleo</p>
             </div>
         </div>
+        </header>
 
         <!-- Menú principal -->
 
         <nav class="menu" aria-label="Menú principal">
-            <a href="index.html" class="activo">Inicio</a>
-            <a href="paginas/conocenos.html">Conócenos</a>
-            <a href="paginas/oferta-educativa.html">Oferta educativa</a>
-            <a href="paginas/instalaciones.html">Instalaciones</a>
-            <a href="paginas/vida-estudiantil.html">Vida estudiantil</a>
-            <a href="paginas/proyectos.html">Proyectos</a>
-            <a href="paginas/noticias.html">Noticias</a>
+    <a href="index.html" class="activo">Bienvenidos</a>
+    <a href="paginas/conocenos.html">Conócenos</a>
+    <a href="paginas/oferta-educativa.html">Oferta educativa</a>
+    <a href="paginas/instalaciones.html">Instalaciones</a>
+    <a href="paginas/vida-estudiantil.html">Vida estudiantil</a>
+    <a href="paginas/proyectos.html">Proyectos</a>
+    <a href="paginas/noticias.html">Noticias</a>
+    <a href="paginas/admisiones.html">Admisiones</a>
+
+    <details class="menu-mas">
+        <summary>Más</summary>
+        <div class="submenu">
             <a href="paginas/eventos.html">Eventos</a>
-            <a href="paginas/admisiones.html">Admisiones</a>
             <a href="paginas/docentes.html">Directorio docente</a>
             <a href="paginas/identidad.html">Identidad ITACE</a>
             <a href="paginas/galeria.html">Galería multimedia</a>
             <a href="paginas/preguntas.html">Preguntas frecuentes</a>
-            <a href="paginas/contacto.html">Contacto</a>
+            <a href="paginas/contacto.html">Contacto y ubicación</a>
             <a href="paginas/creditos.html">Créditos</a>
-        </nav>
-    </header>
-
+        </div>
+    </details>
+</nav>
 
     <!-- Portada principal -->
     <main>
         <section class="portada">
-            <img src="img/banner itace.jpeg" alt="Fotografía principal del ITACE Plantel Reynosa" class="imagen-portada">
+            <img src="img/bienvenidos/banner itace.jpeg" alt="Fotografía principal del ITACE Plantel Reynosa" class="imagen-portada">
             <div class="capa-portada"></div>
             <div class="contenido-portada">
                 <p class="etiqueta-portada">
@@ -129,10 +135,36 @@
             </div>
         </section>
 
+        <!-- CONTADOR -->
+         <section class="contador-institucional">
+            <div class="encabezado-contador">
+                <span>ITACE | PLANTEL REYNOSA</span>
+                <h2>Nuestra comunidad, nuestra historia</h2>
+                <p>Formando jóvenes y construyendo oportunidades.</p>
+            </div>
+            <div class="contador-contadores">
+                <div class="dato-contador">
+                    <span class="numero-contador" data-target="1452">0</span>
+                    <h3>Alumnos inscritos</h3>
+                    <p>Ciclo escolar 2025-2026</p>
+                </div>
+                <div class="dato-contador">
+                    <span class="numero-contador" data-target="7">0</span>
+                    <h3>Carreras técnicas</h3>
+                    <p>Oferta educativa | Reynosa</p>
+                </div>
+                <div class="dato-contador">
+                    <span class="numero-contador" data-target="35">0</span>
+                    <h3>Años de trayectoria</h3>
+                    <p>Desde 1991</p>
+                </div>
+            </div>
+         </section>
+
         <!-- Presentación de la institución -->
         <section class="presentacion-institucion">
             <div class="imagen-presentacion">
-                <img src="img/direccion.jpeg"
+                <img src="img/bienvenidos/direccion.jpeg"
                     alt="Fotografía institucional del ITACE Plantel Reynosa">
             </div>
 
@@ -153,34 +185,85 @@
             </div>
         </section>
 
-        <!-- Oferta educativa destacada -->
-        <section class="oferta-destacada">
-            <div class="encabezado-seccion">
-                <p class="etiqueta-seccion">
-                    FORMACIÓN ACADÉMICA
-                </p>
-                <h2>Oferta educativa</h2>
+       <!-- APRENDE HACIENDO -->
+<section class="aprende-haciendo">
+
+    <div class="encabezado-seccion">
+        <p class="etiqueta-seccion">ACTIVIDADES Y APRENDIZAJE</p>
+        <h2>Aprende haciendo</h2>
+        <p>
+            En ITACE Plantel Reynosa, el aprendizaje va más allá del aula.
+            Los estudiantes desarrollan sus habilidades y talentos mediante
+            talleres culturales, actividades deportivas y experiencias
+            relacionadas con su formación técnica.
+        </p>
+    </div>
+
+    <div class="contenedor-aprende">
+
+        <!-- TALLERES CULTURALES -->
+        <article class="tarjeta-aprende">
+
+            <div class="imagen-aprende">
+                <img src="img/bienvenidos/aprende.jpg" alt="Talleres culturales y formativos">
+            </div>
+
+            <div class="texto-aprende">
+                <h3>Talleres culturales y formativos</h3>
                 <p>
-                    Consulta las especialidades y los programas académicos del plantel.
+                    Espacios donde los estudiantes pueden expresar su
+                    creatividad, desarrollar talentos y participar en
+                    actividades culturales.
+                </p>
+
+                <ul>
+                    <li>Rondalla</li>
+                    <li>Dibujo, pintura y escultura</li>
+                    <li>Banda de guerra</li>
+                    <li>Danza folclórica</li>
+                    <li>Robótica</li>
+                    <li>Ajedrez</li>
+                    <li>Oratoria</li>
+                </ul>
+            </div>
+
+        </article>
+
+        <!-- ACTIVIDADES DEPORTIVAS -->
+        <article class="tarjeta-aprende">
+            <div class="texto-aprende">
+                <h3>Actividades deportivas</h3>
+                <p>
+                    El deporte fomenta la convivencia, el trabajo en equipo,
+                    la disciplina y la participación de los estudiantes.
+                </p>
+
+                <ul>
+                    <li>Fútbol varonil y femenil</li>
+                    <li>Voleibol varonil y femenil</li>
+                    <li>Béisbol</li>
+                </ul>
+            </div>
+
+        </article>
+
+        <!-- FORMACIÓN TÉCNICA -->
+        <article class="tarjeta-aprende">
+            <div class="texto-aprende">
+                <h3>Formación técnica</h3>
+                <p>
+                    A través de sus especialidades, los estudiantes
+                    desarrollan conocimientos y habilidades que les
+                    permiten poner en práctica lo aprendido durante
+                    su formación académica.
                 </p>
             </div>
 
-            <div class="contenido-oferta">
-                <div class="imagen-oferta">
-                    <img src="img/especialidades/industrial.jpg" alt="Imagen representativa de formación técnica">
-                </div>
+        </article>
 
-                <div class="texto-oferta">
-                    <h3>Descubre las especialidades</h3>
-                    <p>
-                        Explora la información de cada carrera, sus características y los elementos que forman parte de su preparación académica.
-                    </p>
-                    <a href="paginas/oferta-educativa.html" class="boton boton-guinda">
-                        Consultar oferta educativa
-                    </a>
-                </div>
-            </div>
-        </section>
+    </div>
+
+</section>
 
         <!-- Vida estudiantil -->
         <section class="vida-destacada">
@@ -198,7 +281,7 @@
             </div>
 
             <div class="imagen-vida">
-                <img src="img/estatal.jpeg" alt="Imagen representativa de las actividades académicas">
+                <img src="img/bienvenidos/estatal.jpeg" alt="Imagen representativa de las actividades académicas">
             </div>
         </section>
 
@@ -240,7 +323,6 @@
         </section>
     </main>
 
-
     <!-- Pie de página -->
 
     <footer class="pie-pagina">
@@ -281,5 +363,6 @@
             </p>
         </div>
     </footer>
+    <script src="JS/itace script.js"></script>
   </body>
 </html>

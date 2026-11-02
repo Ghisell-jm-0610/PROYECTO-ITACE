@@ -1,0 +1,336 @@
+/* CONFIGURACIÓN GENERAL */
+.creditos {
+    width: 100%;
+    overflow: hidden;
+    background: #f8f7f5;
+    color: #333;
+}
+.creditos h2 {
+    color: #750d2b;
+}
+.creditos p {
+    line-height: 1.7;
+}
+/* PORTADA */
+.portada-creditos {
+    position: relative;
+    width: 100%;
+    height: 390px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background: #45091c;
+}
+.portada-creditos img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.portada-creditos::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(69, 9, 28, 0.92),
+        rgba(69, 9, 28, 0.55),
+        rgba(69, 9, 28, 0.12)
+    );
+}
+.portada-creditos div {
+    position: relative;
+    z-index: 1;
+    width: min(850px, 90%);
+    margin: 0 auto;
+    padding: 35px 0;
+    color: #fff;
+}
+.portada-creditos h2 {
+    color: #fff;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+.portada-creditos p {
+    max-width: 620px;
+    font-size: 18px;
+    color: #fff;
+}
+/* INTRODUCCIÓN */
+.introduccion-creditos {
+    max-width: 1050px;
+    margin: 65px auto;
+    padding: 0 25px;
+}
+.introduccion-creditos h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    border-left: 5px solid #e8bd3f;
+}
+.introduccion-creditos p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #555;
+    text-align: justify;
+}
+/* TARJETAS DE FUENTES */
+.contenedor-creditos {
+    max-width: 1150px;
+    margin: 55px auto 75px;
+    padding: 0 25px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+}
+.tarjeta-credito {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #e8e2e3;
+    box-shadow: 0 5px 18px rgba(69, 9, 28, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.tarjeta-credito:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(69, 9, 28, 0.15);
+}
+.tarjeta-credito img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+.tarjeta-credito div {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: flex-start;
+}
+.tarjeta-credito h3 {
+    color: #750d2b;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+.tarjeta-credito p {
+    color: #686868;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.tarjeta-credito a {
+    display: inline-block;
+    margin-top: auto;
+    padding: 11px 17px;
+    background: #750d2b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+.tarjeta-credito a:hover {
+    background: #45091c;
+}
+/* TECNOLOGÍAS */
+.creditos-tecnologias {
+    padding: 65px 25px 75px;
+    background: #fff;
+    text-align: center;
+}
+.creditos-tecnologias > h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+.lista-tecnologias {
+    max-width: 1150px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+.lista-tecnologias article {
+    padding: 25px 18px;
+    background: #f8f7f5;
+    border-radius: 12px;
+    border-bottom: 4px solid #e8bd3f;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.lista-tecnologias article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(69, 9, 28, 0.1);
+}
+.lista-tecnologias img {
+    width: 100%;
+    height: 115px;
+    object-fit: contain;
+    margin-bottom: 18px;
+}
+.lista-tecnologias h3 {
+    color: #750d2b;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+.lista-tecnologias p {
+    color: #686868;
+    font-size: 14px;
+}
+/* RECURSOS GRÁFICOS */
+.fuentes-recursos {
+    max-width: 1050px;
+    margin: 70px auto;
+    padding: 0 25px;
+}
+.fuentes-recursos h2 {
+    font-size: 29px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    border-left: 5px solid #e8bd3f;
+}
+.fuentes-recursos p {
+    color: #555;
+    font-size: 15px;
+    margin-bottom: 14px;
+    text-align: justify;
+}
+/* DATOS ACADÉMICOS */
+.datos-proyecto {
+    max-width: 1050px;
+    margin: 65px auto;
+    padding: 35px 40px;
+    background: #fff;
+    border-left: 6px solid #750d2b;
+    border-radius: 9px;
+    box-shadow: 0 5px 18px rgba(69, 9, 28, 0.08);
+}
+.datos-proyecto h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+.datos-proyecto p {
+    padding: 11px 0;
+    border-bottom: 1px solid #eee7e8;
+    font-size: 15px;
+    color: #555;
+}
+.datos-proyecto p:last-child {
+    border-bottom: none;
+}
+.datos-proyecto strong {
+    color: #750d2b;
+}
+/* AVISO ACADÉMICO */
+.aviso-creditos {
+    max-width: 1050px;
+    margin: 65px auto 75px;
+    padding: 30px 35px;
+    background: #f7e7a6;
+    border-radius: 10px;
+    border-left: 6px solid #e8bd3f;
+}
+.aviso-creditos h2 {
+    color: #45091c;
+    font-size: 25px;
+    margin-bottom: 13px;
+}
+.aviso-creditos p {
+    color: #4c3b25;
+    font-size: 15px;
+    text-align: justify;
+}
+/* TABLET */
+@media (max-width: 900px) {
+    .contenedor-creditos {
+        gap: 20px;
+    }
+    .lista-tecnologias {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .portada-creditos {
+        height: 340px;
+    }
+}
+/* CELULAR */
+@media (max-width: 600px) {
+    .portada-creditos {
+        height: 290px;
+    }
+    .portada-creditos div {
+        width: 88%;
+    }
+    .portada-creditos h2 {
+        font-size: 30px;
+    }
+    .portada-creditos p {
+        font-size: 15px;
+    }
+    .introduccion-creditos {
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+    .introduccion-creditos h2,
+    .creditos-tecnologias > h2,
+    .fuentes-recursos h2 {
+        font-size: 25px;
+    }
+    .contenedor-creditos {
+        grid-template-columns: 1fr;
+        margin: 40px auto 55px;
+        padding: 0 18px;
+        gap: 22px;
+    }
+    .tarjeta-credito img {
+        height: 200px;
+    }
+    .lista-tecnologias {
+        grid-template-columns: 1fr 1fr;
+        gap: 13px;
+    }
+    .lista-tecnologias article {
+        padding: 18px 12px;
+    }
+    .lista-tecnologias img {
+        height: 85px;
+    }
+    .lista-tecnologias h3 {
+        font-size: 17px;
+    }
+    .lista-tecnologias p {
+        font-size: 13px;
+    }
+    .creditos-tecnologias {
+        padding: 45px 16px 50px;
+    }
+    .fuentes-recursos {
+        margin: 45px auto;
+        padding: 0 20px;
+    }
+    .datos-proyecto {
+        margin: 45px 18px;
+        padding: 25px 20px;
+    }
+    .datos-proyecto h2 {
+        font-size: 24px;
+    }
+    .datos-proyecto p {
+        font-size: 14px;
+    }
+    .aviso-creditos {
+        margin: 45px 18px 55px;
+        padding: 23px 20px;
+    }
+    .aviso-creditos h2 {
+        font-size: 22px;
+    }
+}
+/* ACCESIBILIDAD */
+@media (prefers-reduced-motion: reduce) {
+    .tarjeta-credito,
+    .tarjeta-credito a,
+    .lista-tecnologias article {
+        transition: none;
+    }
+}

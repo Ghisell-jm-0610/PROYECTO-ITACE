@@ -1,0 +1,687 @@
+/* CONFIGURACIÓN GENERAL */
+.admisiones {
+    width: 100%;
+    overflow: hidden;
+    background: #f8f7f5;
+    color: #333;
+}
+
+.admisiones img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.etiqueta-seccion {
+    color: #e8bd3f;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.encabezado-admisiones {
+    max-width: 850px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.encabezado-admisiones h2 {
+    color: #750d2b;
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.encabezado-admisiones > p:last-child {
+    color: #686868;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* PORTADA */
+.portada-admisiones {
+    position: relative;
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    background: #45091c;
+    overflow: hidden;
+}
+
+.imagen-portada-admisiones {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.58;
+}
+
+.portada-admisiones::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(69, 9, 28, 0.96),
+        rgba(69, 9, 28, 0.72),
+        rgba(69, 9, 28, 0.12)
+    );
+}
+
+.texto-portada-admisiones {
+    position: relative;
+    z-index: 1;
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 90px 0;
+    color: #fff;
+}
+
+.texto-portada-admisiones h1 {
+    max-width: 750px;
+    font-size: 52px;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.texto-portada-admisiones > p:not(.etiqueta-seccion) {
+    max-width: 620px;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+
+/* BOTONES */
+.boton-admisiones {
+    display: inline-block;
+    padding: 14px 25px;
+    background: #e8bd3f;
+    color: #45091c;
+    text-decoration: none;
+    font-weight: 800;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.boton-admisiones:hover {
+    background: #fff;
+    transform: translateY(-3px);
+}
+
+.enlace-admisiones {
+    display: inline-block;
+    color: #750d2b;
+    text-decoration: none;
+    font-weight: 800;
+    margin-top: 15px;
+    transition: 0.3s ease;
+}
+
+.enlace-admisiones:hover {
+    color: #b17b16;
+}
+
+
+/* PRESENTACIÓN */
+.presentacion-admisiones {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 65px;
+    width: 90%;
+    max-width: 1150px;
+    margin: 90px auto;
+}
+
+.texto-presentacion-admisiones h2 {
+    color: #750d2b;
+    font-size: 36px;
+    line-height: 1.25;
+    margin-bottom: 22px;
+}
+
+.texto-presentacion-admisiones > p:not(.etiqueta-seccion) {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 15px;
+}
+
+.imagen-presentacion-admisiones {
+    background: #fff;
+    padding: 12px;
+    box-shadow: 0 8px 25px rgba(69, 9, 28, 0.12);
+}
+
+.imagen-presentacion-admisiones img {
+    height: 350px;
+}
+
+.imagen-presentacion-admisiones > p {
+    color: #750d2b;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 15px 8px 5px;
+}
+
+
+/* ETAPAS DE INGRESO */
+.informacion-aspirantes {
+    padding: 85px 5%;
+    background: #fff;
+}
+
+.tarjetas-etapas-admision {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1150px;
+    margin: auto;
+}
+
+.etapa-admision {
+    position: relative;
+    padding: 35px 30px;
+    background: #f8f7f5;
+    border-bottom: 5px solid #750d2b;
+    transition: 0.3s ease;
+}
+
+.etapa-admision:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px rgba(69, 9, 28, 0.12);
+}
+
+.numero-etapa {
+    display: inline-block;
+    color: #e8bd3f;
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 18px;
+}
+
+.etapa-admision h3 {
+    color: #750d2b;
+    font-size: 22px;
+    margin-bottom: 13px;
+}
+
+.etapa-admision p {
+    color: #666;
+    line-height: 1.8;
+}
+
+
+/* REQUISITOS DE PREINSCRIPCIÓN */
+.requisitos-admisiones {
+    padding: 90px 5%;
+    background: #f8f7f5;
+}
+
+.contenido-requisitos {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: center;
+    gap: 55px;
+    max-width: 1150px;
+    margin: auto;
+}
+
+.imagen-requisitos {
+    background: #fff;
+    padding: 12px;
+    box-shadow: 0 8px 25px rgba(69, 9, 28, 0.10);
+}
+
+.imagen-requisitos img {
+    height: 420px;
+}
+
+.imagen-requisitos > p {
+    color: #750d2b;
+    font-weight: 700;
+    padding: 15px 8px 5px;
+}
+
+.lista-requisitos h3 {
+    color: #750d2b;
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+
+.lista-requisitos ul,
+.lista-inscripcion ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-requisitos li,
+.lista-inscripcion li {
+    position: relative;
+    padding: 13px 15px 13px 35px;
+    margin-bottom: 9px;
+    background: #fff;
+    border-left: 4px solid #e8bd3f;
+    color: #444;
+    line-height: 1.6;
+}
+
+.lista-requisitos li::before,
+.lista-inscripcion li::before {
+    content: "✓";
+    position: absolute;
+    left: 12px;
+    color: #750d2b;
+    font-weight: 900;
+}
+
+.nota-requisitos {
+    margin-top: 22px;
+    padding: 20px;
+    background: #f7e7a6;
+    border-left: 5px solid #750d2b;
+    line-height: 1.7;
+}
+
+.nota-requisitos strong {
+    display: block;
+    color: #750d2b;
+    margin-bottom: 5px;
+}
+
+
+/* INSCRIPCIÓN */
+.inscripcion-admisiones {
+    padding: 90px 5%;
+    background: #fff;
+}
+
+.contenido-inscripcion {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 50px;
+    align-items: center;
+    max-width: 1150px;
+    margin: auto;
+}
+
+.lista-inscripcion h3 {
+    color: #750d2b;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.imagen-inscripcion {
+    background: #f8f7f5;
+    padding: 12px;
+}
+
+.imagen-inscripcion img {
+    height: 330px;
+}
+
+.aviso-inscripcion {
+    padding: 25px;
+    background: #750d2b;
+    color: #fff;
+}
+
+.aviso-inscripcion h3 {
+    color: #e8bd3f;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.aviso-inscripcion p {
+    line-height: 1.8;
+}
+
+
+/* PROCESO DE ADMISIÓN */
+.proceso-admision {
+    padding: 90px 5%;
+    background: #f8f7f5;
+}
+
+.linea-proceso-admision {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.paso-admision {
+    display: flex;
+    align-items: flex-start;
+    gap: 22px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 18px rgba(69, 9, 28, 0.07);
+}
+
+.numero-paso {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    background: #750d2b;
+    color: #e8bd3f;
+    font-size: 21px;
+    font-weight: 900;
+    border-radius: 50%;
+}
+
+.paso-admision h3 {
+    color: #750d2b;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.paso-admision p {
+    color: #666;
+    line-height: 1.8;
+}
+
+
+/* CONVOCATORIAS */
+.convocatorias-admisiones {
+    position: relative;
+    padding: 95px 5%;
+    background: #750d2b;
+    color: #fff;
+    text-align: center;
+}
+
+.contenido-convocatorias {
+    max-width: 850px;
+    margin: auto;
+}
+
+.contenido-convocatorias h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contenido-convocatorias > p:not(.etiqueta-seccion) {
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 30px;
+}
+
+.enlace-convocatoria {
+    display: block;
+    width: fit-content;
+    margin: 22px auto 0;
+    color: #f7e7a6;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.enlace-convocatoria:hover {
+    color: #fff;
+}
+
+
+/* TRÁMITES Y SERVICIOS */
+.tramites-admisiones {
+    padding: 90px 5%;
+    background: #fff;
+}
+
+.tarjetas-tramites {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.tarjeta-tramite {
+    overflow: hidden;
+    background: #f8f7f5;
+    box-shadow: 0 7px 22px rgba(69, 9, 28, 0.09);
+    transition: 0.3s ease;
+}
+
+.tarjeta-tramite:hover {
+    transform: translateY(-6px);
+}
+
+.tarjeta-tramite img {
+    height: 250px;
+}
+
+.contenido-tarjeta-tramite {
+    padding: 28px;
+}
+
+.contenido-tarjeta-tramite h3 {
+    color: #750d2b;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.contenido-tarjeta-tramite p {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.contenido-tarjeta-tramite a {
+    color: #750d2b;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.contenido-tarjeta-tramite a:hover {
+    color: #b17b16;
+}
+
+
+/* ORIENTACIÓN */
+.orientacion-admisiones {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 55px;
+    padding: 90px 5%;
+    background: #f8f7f5;
+}
+
+.imagen-orientacion-admisiones img {
+    height: 380px;
+}
+
+.texto-orientacion-admisiones h2 {
+    color: #750d2b;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.texto-orientacion-admisiones > p:not(.etiqueta-seccion) {
+    color: #555;
+    line-height: 1.9;
+    margin-bottom: 25px;
+}
+
+
+/* DATOS DE CONTACTO */
+.datos-admisiones {
+    padding: 90px 5%;
+    background: #fff;
+}
+
+.tarjetas-datos-admisiones {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1150px;
+    margin: auto;
+}
+
+.dato-admision {
+    padding: 32px;
+    background: #f8f7f5;
+    border-top: 5px solid #750d2b;
+}
+
+.dato-admision > span {
+    color: #d4a72f;
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.dato-admision h3 {
+    color: #750d2b;
+    font-size: 21px;
+    margin: 15px 0;
+}
+
+.dato-admision p,
+.dato-admision a {
+    color: #555;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+.dato-admision a {
+    text-decoration: none;
+}
+
+.dato-admision a:hover {
+    color: #750d2b;
+}
+
+
+/* CIERRE */
+.cierre-admisiones {
+    position: relative;
+    padding: 100px 5%;
+    background:
+        linear-gradient(rgba(69, 9, 28, 0.91), rgba(69, 9, 28, 0.91)),
+        url("../img/admisiones/cierre-admisiones.jpeg") center/cover no-repeat;
+    text-align: center;
+    color: #fff;
+}
+
+.texto-cierre-admisiones {
+    max-width: 800px;
+    margin: auto;
+}
+
+.texto-cierre-admisiones h2 {
+    font-size: 38px;
+    margin-bottom: 18px;
+}
+
+.texto-cierre-admisiones > p:not(.etiqueta-seccion) {
+    line-height: 1.9;
+    margin-bottom: 28px;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .presentacion-admisiones,
+    .contenido-requisitos,
+    .contenido-inscripcion,
+    .orientacion-admisiones {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .tarjetas-etapas-admision,
+    .tarjetas-datos-admisiones {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .imagen-presentacion-admisiones img {
+        height: 380px;
+    }
+
+    .imagen-requisitos img {
+        height: 350px;
+    }
+
+    .texto-presentacion-admisiones h2,
+    .texto-orientacion-admisiones h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .portada-admisiones {
+        min-height: 450px;
+    }
+
+    .texto-portada-admisiones {
+        padding: 70px 0;
+    }
+
+    .texto-portada-admisiones h1 {
+        font-size: 35px;
+    }
+
+    .texto-portada-admisiones > p:not(.etiqueta-seccion) {
+        font-size: 15px;
+    }
+
+    .encabezado-admisiones h2 {
+        font-size: 27px;
+    }
+
+    .presentacion-admisiones,
+    .informacion-aspirantes,
+    .requisitos-admisiones,
+    .inscripcion-admisiones,
+    .proceso-admision,
+    .tramites-admisiones,
+    .orientacion-admisiones,
+    .datos-admisiones {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .tarjetas-etapas-admision,
+    .linea-proceso-admision,
+    .tarjetas-tramites,
+    .tarjetas-datos-admisiones {
+        grid-template-columns: 1fr;
+    }
+
+    .texto-portada-admisiones h1,
+    .texto-cierre-admisiones h2 {
+        font-size: 32px;
+    }
+
+    .imagen-presentacion-admisiones img,
+    .imagen-requisitos img,
+    .imagen-inscripcion img,
+    .imagen-orientacion-admisiones img {
+        height: 260px;
+    }
+
+    .paso-admision {
+        padding: 22px;
+    }
+
+    .contenido-convocatorias h2 {
+        font-size: 29px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .boton-admisiones,
+    .enlace-admisiones,
+    .etapa-admision,
+    .tarjeta-tramite {
+        transition: none;
+    }
+}

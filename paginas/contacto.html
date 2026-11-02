@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vida estudiantil | ITACE Reynosa</title>
+    <title>Contacto y ubicación | ITACE Reynosa</title>
     <link rel="stylesheet" href="../CSS/estilos ITACE.css">
+    <link rel="stylesheet" href="../CSS/contacto-ubicacion.css">
 </head>
 <body>
     <header class="encabezado" id="inicio">
@@ -20,126 +21,241 @@
                 <p>Instituto Tamaulipeco de Capacitación para el Empleo</p>
             </div>
         </div>
-        <nav class="menu" aria-label="Menú principal">
-            <a href="../index.html">Inicio</a>
-            <a href="conocenos.html">Conócenos</a>
-            <a href="oferta-educativa.html">Oferta educativa</a>
-            <a href="instalaciones.html">Instalaciones</a>
-            <a href="vida-estudiantil.html">Vida estudiantil</a>
-            <a href="proyectos.html">Proyectos</a>
-            <a href="noticias.html">Noticias</a>
-            <a href="eventos.html">Eventos</a>
-            <a href="admisiones.html">Admisiones</a>
-            <a href="docentes.html">Directorio docente</a>
-            <a href="identidad.html">Identidad ITACE</a>
-            <a href="galeria.html">Galería multimedia</a>
-            <a href="preguntas.html">Preguntas frecuentes</a>
-            <a href="contacto.html" class="activo">Contacto</a>
-            <a href="creditos.html">Créditos</a>
-        </nav>
     </header>
-
-<main class="contacto">
-    <section class="portada-contacto">
-        <img src="../img/contacto-portada.jpg" alt="Instalaciones del ITACE Plantel Reynosa">
-        <div>
-            <h2>Estamos para orientarte</h2>
-            <p>Encuentra los medios para comunicarte con el Plantel Reynosa.</p>
-        </div>
-    </section>
-
-    <section class="introduccion-contacto">
-        <h2>Contacto institucional</h2>
-        <p>
-            Si deseas obtener información sobre la oferta educativa,
-            los trámites escolares o los servicios disponibles, puedes
-            comunicarte mediante los datos institucionales que se presentan
-            a continuación.
-        </p>
-    </section>
-
-    <section class="contenedor-contacto">
-        <article class="tarjeta-contacto">
-            <img src="../img/contacto-ubicacion.jpg" alt="Ubicación del plantel">
+    <nav class="menu" aria-label="Menú principal">
+        <a href="../index.html">Bienvenidos</a>
+        <a href="conocenos.html">Conócenos</a>
+        <a href="oferta-educativa.html">Oferta educativa</a>
+        <a href="instalaciones.html">Instalaciones</a>
+        <a href="vida-estudiantil.html">Vida estudiantil</a>
+        <a href="proyectos.html">Proyectos</a>
+        <a href="noticias.html">Noticias</a>
+        <a href="admisiones.html">Admisiones</a>
+        <details class="menu-mas">
+            <summary>Más</summary>
+            <div class="submenu">
+                <a href="eventos.html">Eventos</a>
+                <a href="docentes.html">Directorio docente</a>
+                <a href="identidad.html">Identidad ITACE</a>
+                <a href="galeria.html">Galería multimedia</a>
+                <a href="preguntas.html">Preguntas frecuentes</a>
+                <a href="contacto.html" class="activo">Contacto y ubicación</a>
+                <a href="creditos.html">Créditos</a>
+            </div>
+        </details>
+    </nav>
+    <main class="contacto">
+        <!-- PORTADA -->
+        <section class="portada-contacto">
+            <img src="../img/instalaciones/entrada.jpeg"
+                 alt="Instalaciones del ITACE Plantel Reynosa">
             <div>
-                <h3>Dirección del plantel</h3>
+                <span>ITACE PLANTEL REYNOSA</span>
+                <h2>Estamos para orientarte</h2>
                 <p>
-                    Calle Octava y Zaragoza No. 515, Colonia Prolongación
-                    Las Cumbres, C.P. 88745, Reynosa, Tamaulipas.
+                    Conoce nuestros medios de contacto, consulta nuestra
+                    ubicación y encuentra la información que necesitas.
                 </p>
-                <p>Consulta la ubicación antes de acudir personalmente.</p>
+            </div>
+        </section>
+        <!-- INTRODUCCIÓN -->
+        <section class="introduccion-contacto">
+            <span>ATENCIÓN E INFORMACIÓN</span>
+            <h2>Estamos cerca de ti</h2>
+            <p>
+                El ITACE Plantel Reynosa pone a disposición de estudiantes,
+                familias y aspirantes diferentes medios para solicitar
+                información y orientación. Ya sea que necesites conocer
+                nuestra oferta educativa, realizar un trámite o visitar
+                las instalaciones, aquí encontrarás los datos de referencia.
+            </p>
+
+            <p><strong>(Haga click en algun recuadro para mayor información)</strong></p>
+        </section>
+        <!-- ACCESOS RÁPIDOS -->
+        <section class="accesos-contacto">
+            <a href="tel:+528999240184" class="acceso-contacto">
+                <span class="icono-contacto">01</span>
+                <div>
+                    <h3>Llamar al plantel</h3>
+                    <p>Consulta información por teléfono.</p>
+                </div>
+            </a>
+            <a href="mailto:plantel.reynosa@itace.edu.mx" class="acceso-contacto">
+                <span class="icono-contacto">02</span>
+                <div>
+                    <h3>Enviar un correo</h3>
+                    <p>Escribe tus dudas o solicitudes.</p>
+                </div>
+            </a>
+            <a href="https://www.google.com/maps/search/?api=1&query=ITACE+Plantel+Reynosa+Tamaulipas"
+               target="_blank" rel="noopener noreferrer" class="acceso-contacto">
+                <span class="icono-contacto">03</span>
+                <div>
+                    <h3>Cómo llegar</h3>
+                    <p>Consulta nuestra ubicación.</p>
+                </div>
+            </a>
+        </section>
+        <!-- DATOS INSTITUCIONALES -->
+        <section class="datos-contacto">
+            <div class="encabezado-contacto">
+                <span>MEDIOS INSTITUCIONALES</span>
+                <h2>Información de contacto</h2>
+                <p>Utiliza los siguientes datos para comunicarte con el plantel.</p>
+            </div>
+            <div class="contenedor-contacto">
+                <article class="tarjeta-contacto">
+                    <img src="../img/instalaciones/direccion vista 2.jpeg"
+                         alt="Ubicación del Plantel Reynosa">
+                    <div>
+                        <span class="numero-contacto">01</span>
+                        <h3>Dirección del plantel</h3>
+                        <p>
+                            Calle Octava y Zaragoza No. 515, Colonia
+                            Prolongación Las Cumbres, C.P. 88745,
+                            Reynosa, Tamaulipas.
+                        </p>
+                        <a href="https://www.google.com/maps/search/?api=1&query=ITACE+Plantel+Reynosa+Tamaulipas"
+                           target="_blank" rel="noopener noreferrer">
+                            Ver ubicación en el mapa
+                        </a>
+                    </div>
+                </article>
+                <article class="tarjeta-contacto">
+                    <img src="../img/ubicacion/tel.jpg"
+                         alt="Atención telefónica">
+                    <div>
+                        <span class="numero-contacto">02</span>
+                        <h3>Teléfonos</h3>
+                        <p>
+                            Puedes utilizar las siguientes líneas
+                            publicadas para solicitar información:
+                        </p>
+                        <ul>
+                            <li><a href="tel:+528999240184">899 924 01 84</a></li>
+                            <li><a href="tel:+528999252403">899 925 24 03</a></li>
+                            <li><a href="tel:+528999252386">899 925 23 86</a></li>
+                        </ul>
+                        <p>Consulta la disponibilidad de atención.</p>
+                    </div>
+                </article>
+                <article class="tarjeta-contacto">
+                    <img src="../img/ubicacion/gmail.jpeg"
+                         alt="Comunicación por correo electrónico">
+                    <div>
+                        <span class="numero-contacto">03</span>
+                        <h3>Correo electrónico</h3>
+                        <p>
+                            Puedes escribir para solicitar orientación,
+                            realizar consultas generales o preguntar
+                            qué área puede atenderte.
+                        </p>
+                        <a href="mailto:plantel.reynosa@itace.edu.mx">
+                            plantel.reynosa@itace.edu.mx
+                        </a>
+                    </div>
+                </article>
+                <article class="tarjeta-contacto">
+                    <img src="../img/ubicacion/logo itace.jpg"
+                         alt="Portal institucional del ITACE">
+                    <div>
+                        <span class="numero-contacto">04</span>
+                        <h3>Portal oficial</h3>
+                        <p>
+                            Consulta información institucional,
+                            convocatorias, comunicados y contenidos
+                            relacionados con la oferta educativa.
+                        </p>
+                        <a href="https://itace.edu.mx/"
+                           target="_blank" rel="noopener noreferrer">
+                            Visitar portal del ITACE
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!-- MAPA -->
+        <section class="ubicacion-contacto">
+            <div class="texto-ubicacion">
+                <span>ENCUÉNTRANOS</span>
+                <h2>Ubicación del Plantel Reynosa</h2>
+                <p>
+                    Consulta el mapa para localizar el plantel y
+                    organizar tu visita. Puedes abrir Google Maps
+                    para obtener indicaciones desde tu ubicación.
+                </p>
+                <div class="direccion-ubicacion">
+                    <h3>Dirección</h3>
+                    <p>
+                        Calle Octava y Zaragoza No. 515,
+                        Colonia Prolongación Las Cumbres,
+                        C.P. 88745, Reynosa, Tamaulipas.
+                    </p>
+                </div>
                 <a href="https://www.google.com/maps/search/?api=1&query=ITACE+Plantel+Reynosa+Tamaulipas"
-                   target="_blank" rel="noopener noreferrer">Ver ubicación en el mapa</a>
-            </div>
-        </article>
-
-        <article class="tarjeta-contacto">
-            <img src="../img/contacto-telefono.jpg" alt="Atención telefónica">
-            <div>
-                <h3>Teléfonos</h3>
-                <p>Utiliza las siguientes líneas publicadas para el Plantel Reynosa:</p>
-                <ul>
-                    <li><a href="tel:+528999240184">899 924 01 84</a></li>
-                    <li><a href="tel:+528999252403">899 925 24 03</a></li>
-                    <li><a href="tel:+528999252386">899 925 23 86</a></li>
-                </ul>
-                <p>Consulta la disponibilidad y los horarios de atención.</p>
-            </div>
-        </article>
-
-        <article class="tarjeta-contacto">
-            <img src="../img/contacto-correo.jpg" alt="Comunicación por correo electrónico">
-            <div>
-                <h3>Correo electrónico</h3>
-                <p>
-                    Puedes escribir al correo institucional para solicitar
-                    orientación o preguntar qué área puede atender tu consulta.
-                </p>
-                <a href="mailto:plantel.reynosa@itace.edu.mx">
-                    plantel.reynosa@itace.edu.mx
+                   target="_blank" rel="noopener noreferrer">
+                    Abrir indicaciones en Google Maps
                 </a>
             </div>
-        </article>
-
-        <article class="tarjeta-contacto">
-            <img src="../img/contacto-informacion.jpg" alt="Información institucional">
-            <div>
-                <h3>Portal oficial</h3>
-                <p>
-                    Consulta noticias, convocatorias, información educativa,
-                    avisos y otros contenidos publicados por la institución.
-                </p>
-                <a href="https://itace.edu.mx/" target="_blank"
-                   rel="noopener noreferrer">Visitar portal del ITACE</a>
+            <div class="mapa-contacto">
+                <iframe
+                    src="https://maps.google.com/maps?q=ITACE%20Plantel%20Reynosa%20Tamaulipas&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                    title="Mapa de ubicación del ITACE Plantel Reynosa"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen>
+                </iframe>
             </div>
-        </article>
-    </section>
-
-    <section class="orientacion-contacto">
-        <h2>¿Qué información necesitas?</h2>
-        <p>
-            Para agilizar tu consulta, explica brevemente el motivo de tu
-            comunicación. Puedes preguntar por admisiones, especialidades,
-            documentación, capacitación o información general del plantel.
-        </p>
-        <div class="enlaces-contacto">
-            <a href="admisiones.html">Información de admisiones</a>
-            <a href="oferta-educativa.html">Consultar especialidades</a>
-            <a href="preguntas.html">Revisar preguntas frecuentes</a>
-        </div>
-    </section>
-
-    <section class="aviso-contacto">
-        <h2>Antes de visitar el plantel</h2>
-        <p>
-            Confirma previamente los horarios de atención y los requisitos
-            del trámite que deseas realizar. Los datos de esta página son
-            informativos y deben verificarse en los canales institucionales.
-        </p>
-    </section>
-</main>
-
-<footer class="pie-pagina">
+        </section>
+        <!-- ORIENTACIÓN -->
+        <section class="orientacion-contacto">
+            <div>
+                <span>PODEMOS AYUDARTE</span>
+                <h2>¿Qué información necesitas?</h2>
+                <p>
+                    Para facilitar tu consulta, identifica el tema
+                    sobre el que necesitas orientación. Puedes revisar
+                    los siguientes apartados de nuestro portal.
+                </p>
+            </div>
+            <div class="enlaces-contacto">
+                <a href="admisiones.html">
+                    <span>01</span>
+                    <div>
+                        <h3>Admisiones</h3>
+                        <p>Requisitos y procesos de ingreso.</p>
+                    </div>
+                </a>
+                <a href="oferta-educativa.html">
+                    <span>02</span>
+                    <div>
+                        <h3>Oferta educativa</h3>
+                        <p>Especialidades y formación técnica.</p>
+                    </div>
+                </a>
+                <a href="preguntas.html">
+                    <span>03</span>
+                    <div>
+                        <h3>Preguntas frecuentes</h3>
+                        <p>Respuestas a dudas comunes.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <!-- AVISO -->
+        <section class="aviso-contacto">
+            <h2>Antes de visitar el plantel</h2>
+            <p>
+                Te recomendamos confirmar previamente los horarios
+                de atención, la disponibilidad del personal y los
+                requisitos del trámite que deseas realizar. La
+                información de este portal es orientativa y debe
+                verificarse mediante los canales institucionales.
+            </p>
+        </section>
+    </main>
+    <footer class="pie-pagina">
         <div class="contenido-pie">
             <div class="identidad-pie">
                 <img src="../img/logo itace.jpeg" alt="Logotipo del ITACE">

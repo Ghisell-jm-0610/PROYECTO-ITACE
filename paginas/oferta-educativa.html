@@ -5,42 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oferta Educativa | ITACE Reynosa</title>
     <link rel="stylesheet" href="../CSS/estilos ITACE.css">
+    <link rel="stylesheet" href="../CSS/oferta-educativa.css">
 </head>
 <body>
-   <header class="encabezado">
-    <div class="barra-superior">
-        <a href="../index.html" class="identidad">
-            <img src="../img/logo itace.jpeg" alt="Logotipo del ITACE">
-            <div class="nombre-plantel">
-                <h1>ITACE</h1>
-                <p>Plantel Reynosa</p>
+    <header class="encabezado">
+        <div class="barra-superior">
+            <a href="../index.html" class="identidad">
+                <img src="../img/logo itace.jpeg" alt="Logotipo del ITACE">
+                <div class="nombre-plantel">
+                    <h1>ITACE</h1>
+                    <p>Plantel Reynosa</p>
+                </div>
+            </a>
+            <div class="texto-encabezado">
+                Bachillerato Tecnológico y Capacitación para el Trabajo
             </div>
-        </a>
-        <div class="texto-encabezado">
-            Bachillerato Tecnológico y Capacitación para el Trabajo
         </div>
-    </div>
+    </header>
+
     <nav class="menu" aria-label="Menú principal">
-        <a href="../index.html">Inicio</a>
+        <a href="../index.html">Bienvenidos</a>
         <a href="conocenos.html">Conócenos</a>
         <a href="oferta-educativa.html" class="activo">Oferta educativa</a>
         <a href="instalaciones.html">Instalaciones</a>
         <a href="vida-estudiantil.html">Vida estudiantil</a>
         <a href="proyectos.html">Proyectos</a>
         <a href="noticias.html">Noticias</a>
-        <a href="eventos.html">Eventos</a>
         <a href="admisiones.html">Admisiones</a>
-        <a href="docentes.html">Directorio docente</a>
-        <a href="identidad.html">Identidad ITACE</a>
-        <a href="galeria.html">Galería multimedia</a>
-        <a href="preguntas.html">Preguntas frecuentes</a>
-        <a href="contacto.html">Contacto</a>
-        <a href="creditos.html">Créditos</a>
+        <details class="menu-mas">
+            <summary>Más</summary>
+            <div class="submenu">
+                <a href="eventos.html">Eventos</a>
+                <a href="docentes.html">Directorio docente</a>
+                <a href="identidad.html">Identidad ITACE</a>
+                <a href="galeria.html">Galería multimedia</a>
+                <a href="preguntas.html">Preguntas frecuentes</a>
+                <a href="contacto.html">Contacto y ubicación</a>
+                <a href="creditos.html">Créditos</a>
+            </div>
+        </details>
     </nav>
-</header>
+
     <main>
         <section class="portada-oferta">
-            <!-- Aquí se agregará la imagen principal -->
             <div class="contenido-portada-oferta">
                 <p class="etiqueta-oferta">FORMACIÓN PARA EL FUTURO</p>
                 <h2>Oferta Educativa</h2>
@@ -48,6 +55,7 @@
                 <a href="#especialidades" class="boton-oferta">Conoce las especialidades</a>
             </div>
         </section>
+
         <section class="introduccion-oferta">
             <div class="texto-introduccion-oferta">
                 <p class="subtitulo-oferta">TU FUTURO COMIENZA AQUÍ</p>
@@ -56,19 +64,25 @@
                 <p>Esta preparación busca que los estudiantes desarrollen conocimientos y habilidades que puedan aplicar en el ámbito laboral y que continúen sus estudios si así lo desean.</p>
             </div>
             <div class="imagen-introduccion-oferta">
-                <img src="../img/proyectos.jpg" alt="Estudiantes del ITACE durante sus actividades académicas">
+                <img src="../img/especialidades/estudiantesjpeg.jpeg" alt="Estudiantes del ITACE durante sus actividades académicas">
             </div>
         </section>
+
         <section class="seccion-especialidades" id="especialidades">
             <div class="encabezado-especialidades">
                 <p class="subtitulo-oferta">BACHILLERATO TECNOLÓGICO</p>
                 <h2>Conoce nuestras especialidades</h2>
                 <p>Explora las siete áreas de formación disponibles en el Plantel Reynosa.</p>
             </div>
+
             <div class="lista-especialidades">
+
                 <article class="especialidad especialidad-industrial">
                     <div class="imagen-especialidad">
                         <img src="../img/especialidades/industrial.jpg" alt="Área de mantenimiento industrial">
+                        <video muted loop playsinline preload="none" aria-label="Video de mantenimiento industrial">
+                            <source src="../videos/oferta-educativa/mantenimiento industrial.mp4" type="video/mp4">
+                        </video>
                     </div>
                     <div class="contenido-especialidad">
                         <span class="numero-especialidad">01</span>
@@ -77,9 +91,13 @@
                         <p class="campo-especialidad"><strong>Área de formación:</strong> Industria y mantenimiento técnico.</p>
                     </div>
                 </article>
+
                 <article class="especialidad especialidad-automotriz">
                     <div class="imagen-especialidad">
                         <img src="../img/especialidades/automotriz.jpg" alt="Área de mantenimiento automotriz">
+                        <video muted loop playsinline preload="none" aria-label="Video de mantenimiento automotriz">
+                            <source src="../videos/oferta-educativa/automotriz.mp4" type="video/mp4">
+                        </video>
                     </div>
                     <div class="contenido-especialidad">
                         <span class="numero-especialidad">02</span>
@@ -88,9 +106,13 @@
                         <p class="campo-especialidad"><strong>Área de formación:</strong> Mecánica y sistemas automotrices.</p>
                     </div>
                 </article>
+
                 <article class="especialidad especialidad-diseno">
                     <div class="imagen-especialidad">
                         <img src="../img/especialidades/diseño.jpg" alt="Trabajo de diseño gráfico digital">
+                        <video muted loop playsinline preload="none" aria-label="Video de diseño gráfico digital">
+                            <source src="../videos/oferta-educativa/diseño .mp4" type="video/mp4">
+                        </video>
                     </div>
                     <div class="contenido-especialidad">
                         <span class="numero-especialidad">03</span>
@@ -99,9 +121,13 @@
                         <p class="campo-especialidad"><strong>Área de formación:</strong> Diseño y comunicación visual.</p>
                     </div>
                 </article>
+
                 <article class="especialidad especialidad-ciberseguridad">
                     <div class="imagen-especialidad">
                         <img src="../img/especialidades/ciberseguridad.jpg" alt="Sistemas y equipos de ciberseguridad">
+                        <video muted loop playsinline preload="none" aria-label="Video de ciberseguridad">
+                            <source src="../videos/oferta-educativa/ciberseguridad.mp4" type="video/mp4">
+                        </video>
                     </div>
                     <div class="contenido-especialidad">
                         <span class="numero-especialidad">04</span>
@@ -110,9 +136,13 @@
                         <p class="campo-especialidad"><strong>Área de formación:</strong> Seguridad informática y redes.</p>
                     </div>
                 </article>
+
                 <article class="especialidad especialidad-semiconductores">
                     <div class="imagen-especialidad">
                         <img src="../img/especialidades/semi y micro.jpg" alt="Componentes electrónicos y microchips">
+                        <video muted loop playsinline preload="none" aria-label="Video de semiconductores y microelectrónica">
+                            <source src="../videos/oferta-educativa/semi.mp4" type="video/mp4">
+                        </video>
                     </div>
                     <div class="contenido-especialidad">
                         <span class="numero-especialidad">05</span>
@@ -121,9 +151,13 @@
                         <p class="campo-especialidad"><strong>Área de formación:</strong> Electrónica y tecnología de semiconductores.</p>
                     </div>
                 </article>
+
                 <article class="especialidad especialidad-inteligencia">
                     <div class="imagen-especialidad">
                         <img src="../img/especialidades/IA.jpg" alt="Tecnología relacionada con inteligencia artificial">
+                        <video muted loop playsinline preload="none" aria-label="Video de inteligencia artificial">
+                            <source src="../videos/oferta-educativa/ia.mp4" type="video/mp4">
+                        </video>
                     </div>
                     <div class="contenido-especialidad">
                         <span class="numero-especialidad">06</span>
@@ -132,9 +166,13 @@
                         <p class="campo-especialidad"><strong>Área de formación:</strong> Tecnología, programación y sistemas inteligentes.</p>
                     </div>
                 </article>
+
                 <article class="especialidad especialidad-logistica">
                     <div class="imagen-especialidad">
                         <img src="../img/especialidades/logistica.jpg" alt="Actividades de almacenamiento y logística">
+                        <video muted loop playsinline preload="none" aria-label="Video de logística">
+                            <source src="../videos/oferta-educativa/logistica.mp4" type="video/mp4">
+                        </video>
                     </div>
                     <div class="contenido-especialidad">
                         <span class="numero-especialidad">07</span>
@@ -143,8 +181,10 @@
                         <p class="campo-especialidad"><strong>Área de formación:</strong> Organización, inventarios y distribución.</p>
                     </div>
                 </article>
+
             </div>
         </section>
+
         <section class="eleccion-especialidad">
             <div class="contenido-eleccion">
                 <p class="subtitulo-oferta">ELIGE TU CAMINO</p>
@@ -154,13 +194,13 @@
                 <a href="admisiones.html" class="boton-oferta">Consultar admisiones</a>
             </div>
         </section>
+
         <section class="informacion-oficial-oferta">
             <h2>Consulta la información oficial</h2>
             <p>Para conocer más detalles sobre el Plantel Reynosa y su oferta educativa, consulta el sitio oficial del Instituto Tamaulipeco de Capacitación para el Empleo.</p>
             <a href="https://itace.edu.mx/bachillerato/planteles/plantel-reynosa/" target="_blank" rel="noopener noreferrer">Visitar la página oficial del ITACE Reynosa</a>
         </section>
     </main>
-     <!-- Pie de página -->
 
     <footer class="pie-pagina">
         <div class="contenido-pie">
@@ -168,36 +208,22 @@
                 <img src="../img/logo itace.jpeg" alt="Logotipo del ITACE">
                 <div>
                     <h2>ITACE Plantel Reynosa</h2>
-                    <p>
-                        Portal académico e informativo.
-                    </p>
+                    <p>Portal académico e informativo.</p>
                 </div>
             </div>
-
             <div class="enlaces-pie">
                 <h3>Enlaces de interés</h3>
-                <a href="paginas/conocenos.html">
-                    Conoce al ITACE
-                </a>
-                <a href="paginas/admisiones.html">
-                    Admisiones
-                </a>
-                <a href="paginas/contacto.html">
-                    Contacto y ubicación
-                </a>
-                <a href="paginas/creditos.html">
-                    Créditos y fuentes
-                </a>
+                <a href="conocenos.html">Conoce al ITACE</a>
+                <a href="admisiones.html">Admisiones</a>
+                <a href="contacto.html">Contacto y ubicación</a>
+                <a href="creditos.html">Créditos y fuentes</a>
             </div>
         </div>
-        
         <div class="aviso-pie">
-            <p>
-                Este sitio es una propuesta académica no oficial.
-            </p>
-            <p>
-                Proyecto escolar del grupo 502-B.
-            </p>
+            <p>Este sitio es una propuesta académica no oficial.</p>
+            <p>Proyecto escolar del grupo 502-B.</p>
         </div>
+    </footer>
+<script src="../JS/itace script.js"></script>
 </body>
 </html>

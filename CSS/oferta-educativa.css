@@ -1,0 +1,630 @@
+/* PORTADA */
+
+.portada-oferta {
+    min-height: 570px;
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    align-items: stretch;
+    background: var(--guinda-oscuro);
+    overflow: hidden;
+    position: relative;
+}
+
+.contenido-portada-oferta {
+    padding: 85px 7% 85px 12%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    z-index: 2;
+    color: var(--blanco);
+}
+
+.etiqueta-oferta {
+    color: var(--amarillo);
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 23px;
+}
+
+.contenido-portada-oferta h2 {
+    color: var(--blanco);
+    font-size: clamp(46px, 5.5vw, 72px);
+    line-height: 1;
+    letter-spacing: -2px;
+    margin-bottom: 25px;
+}
+
+.contenido-portada-oferta > p:not(.etiqueta-oferta) {
+    color: #f3e6e9;
+    font-size: 16px;
+    line-height: 1.9;
+    max-width: 570px;
+    margin-bottom: 32px;
+}
+
+.boton-oferta {
+    display: inline-block;
+    padding: 15px 27px;
+    background: var(--amarillo);
+    color: var(--guinda-oscuro);
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.boton-oferta:hover {
+    background: var(--blanco);
+    transform: translateY(-4px);
+}
+
+.portada-oferta::after {
+    content: "";
+    display: block;
+    min-height: 570px;
+    background:
+        linear-gradient(90deg, rgba(69, 9, 28, 0.25), transparent 40%),
+        url("../img/especialidades/proyectos.jpg") center/cover no-repeat;
+    position: relative;
+}
+
+.portada-oferta::before {
+    content: "ITACE";
+    position: absolute;
+    left: 8%;
+    bottom: -65px;
+    font-size: 190px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.035);
+    pointer-events: none;
+}
+
+/* INTRODUCCIÓN */
+
+.introduccion-oferta {
+    display: grid;
+    grid-template-columns: 1fr 0.9fr;
+    align-items: center;
+    gap: 65px;
+    padding: 105px 10%;
+    background: #fffdfb;
+}
+
+.texto-introduccion-oferta {
+    max-width: 650px;
+}
+
+.subtitulo-oferta {
+    color: var(--guinda-claro);
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2.5px;
+    margin-bottom: 17px;
+}
+
+.texto-introduccion-oferta h2 {
+    color: var(--guinda-oscuro);
+    font-size: clamp(30px, 3.5vw, 42px);
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.texto-introduccion-oferta > p:not(.subtitulo-oferta) {
+    color: #625b5b;
+    font-size: 15px;
+    line-height: 1.95;
+    margin-bottom: 17px;
+}
+
+.imagen-introduccion-oferta {
+    height: 420px;
+    position: relative;
+}
+
+.imagen-introduccion-oferta::before {
+    content: "";
+    position: absolute;
+    width: 72%;
+    height: 75%;
+    right: -17px;
+    bottom: -17px;
+    background: var(--amarillo);
+}
+
+.imagen-introduccion-oferta::after {
+    content: "APRENDE · CREA · TRANSFORMA";
+    position: absolute;
+    left: -22px;
+    bottom: 25px;
+    z-index: 2;
+    padding: 13px 18px;
+    background: var(--guinda);
+    color: var(--blanco);
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.imagen-introduccion-oferta img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+}
+
+/* ENCABEZADO DE ESPECIALIDADES */
+
+.seccion-especialidades {
+    padding: 100px 7%;
+    background: #f1eeeb;
+}
+
+.encabezado-especialidades {
+    max-width: 850px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.encabezado-especialidades .subtitulo-oferta {
+    color: var(--guinda-claro);
+}
+
+.encabezado-especialidades h2 {
+    color: var(--guinda-oscuro);
+    font-size: clamp(32px, 4vw, 45px);
+    margin-bottom: 18px;
+}
+
+.encabezado-especialidades > p:last-child {
+    color: #686060;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* CUADRÍCULA DE SIETE ESPECIALIDADES */
+
+.lista-especialidades {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.especialidad {
+    grid-column: span 3;
+    background: var(--blanco);
+    border-radius: 7px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e7dedb;
+    box-shadow: 0 7px 22px rgba(69, 9, 28, 0.07);
+    transition: transform 0.35s, box-shadow 0.35s;
+}
+
+.especialidad:nth-child(5) {
+    grid-column: 2 / span 3;
+}
+
+.especialidad:nth-child(6) {
+    grid-column: 5 / span 3;
+}
+
+.especialidad:nth-child(7) {
+    grid-column: 8 / span 3;
+}
+
+.especialidad:hover {
+    transform: translateY(-9px);
+    box-shadow: 0 17px 35px rgba(69, 9, 28, 0.15);
+}
+
+/* FOTOGRAFÍAS */
+
+.imagen-especialidad {
+    height: 205px;
+    position: relative;
+    overflow: hidden;
+    background: #e5ddda;
+}
+
+.imagen-especialidad::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        0deg,
+        rgba(69, 9, 28, 0.65),
+        transparent 65%
+    );
+    pointer-events: none;
+}
+
+.imagen-especialidad img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.especialidad:hover .imagen-especialidad img {
+    transform: scale(1.09);
+}
+
+/* CONTENIDO DE TARJETAS */
+
+.contenido-especialidad {
+    padding: 24px 22px 22px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: relative;
+}
+
+.numero-especialidad {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 39px;
+    height: 39px;
+    margin-top: -46px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+    background: var(--amarillo);
+    color: var(--guinda-oscuro);
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.contenido-especialidad h3 {
+    color: var(--guinda-oscuro);
+    font-size: 20px;
+    line-height: 1.3;
+    margin-bottom: 15px;
+    min-height: 52px;
+}
+
+.contenido-especialidad > p {
+    color: #686060;
+    font-size: 13px;
+    line-height: 1.85;
+    margin-bottom: 17px;
+}
+
+.contenido-especialidad .campo-especialidad {
+    margin-top: auto;
+    padding-top: 15px;
+    border-top: 1px solid #e9e1df;
+    color: var(--guinda);
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.campo-especialidad strong {
+    color: var(--guinda-oscuro);
+}
+
+/* VIDEOS EN LAS TARJETAS DE ESPECIALIDADES */
+
+.imagen-especialidad img,
+.imagen-especialidad video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.4s ease, transform 0.5s ease;
+}
+
+.imagen-especialidad img {
+    z-index: 1;
+    opacity: 1;
+}
+
+.imagen-especialidad video {
+    z-index: 2;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.imagen-especialidad::after {
+    z-index: 3;
+}
+
+.especialidad:hover .imagen-especialidad img,
+.especialidad.reproduciendo .imagen-especialidad img {
+    opacity: 0;
+}
+
+.especialidad:hover .imagen-especialidad video,
+.especialidad.reproduciendo .imagen-especialidad video {
+    opacity: 1;
+}
+
+/* En celulares, los videos se activan al tocar la tarjeta */
+
+@media (hover: none) {
+    .especialidad:hover .imagen-especialidad img {
+        opacity: 1;
+    }
+
+    .especialidad:hover .imagen-especialidad video {
+        opacity: 0;
+    }
+
+    .especialidad.reproduciendo .imagen-especialidad img {
+        opacity: 0;
+    }
+
+    .especialidad.reproduciendo .imagen-especialidad video {
+        opacity: 1;
+    }
+}
+
+/* COLORES DE DETALLE POR ESPECIALIDAD */
+
+.especialidad-industrial {
+    border-top: 4px solid #963650;
+}
+
+.especialidad-automotriz {
+    border-top: 4px solid #750d2b;
+}
+
+.especialidad-diseno {
+    border-top: 4px solid #d6a82f;
+}
+
+.especialidad-ciberseguridad {
+    border-top: 4px solid #45091c;
+}
+
+.especialidad-semiconductores {
+    border-top: 4px solid #b77c34;
+}
+
+.especialidad-inteligencia {
+    border-top: 4px solid #a63c50;
+}
+
+.especialidad-logistica {
+    border-top: 4px solid #806044;
+}
+
+/* SECCIÓN DE ELECCIÓN */
+
+.eleccion-especialidad {
+    padding: 95px 9%;
+    background: #fffdfb;
+}
+
+.contenido-eleccion {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 55px 65px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 25px 50px;
+    background: #f2e9e5;
+    border-left: 7px solid var(--amarillo);
+    position: relative;
+}
+
+.contenido-eleccion .subtitulo-oferta {
+    grid-column: 1 / -1;
+    margin-bottom: -10px;
+}
+
+.contenido-eleccion h2 {
+    color: var(--guinda-oscuro);
+    font-size: 34px;
+    line-height: 1.2;
+    max-width: 650px;
+}
+
+.contenido-eleccion > p:not(.subtitulo-oferta) {
+    grid-column: 1 / 2;
+    color: #625b5b;
+    font-size: 14px;
+    line-height: 1.9;
+    margin-bottom: 0;
+}
+
+.contenido-eleccion .boton-oferta {
+    grid-column: 2;
+    grid-row: 2 / span 2;
+    align-self: center;
+    white-space: nowrap;
+    background: var(--guinda);
+    color: var(--blanco);
+}
+
+.contenido-eleccion .boton-oferta:hover {
+    background: var(--guinda-oscuro);
+}
+
+/* INFORMACIÓN OFICIAL */
+
+.informacion-oficial-oferta {
+    padding: 55px 10%;
+    background: var(--guinda);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 30px;
+}
+
+.informacion-oficial-oferta h2 {
+    color: var(--blanco);
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.informacion-oficial-oferta p {
+    max-width: 720px;
+    color: #eadde0;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.informacion-oficial-oferta a {
+    display: inline-block;
+    padding: 15px 21px;
+    border: 1px solid var(--amarillo);
+    color: var(--amarillo);
+    border-radius: 3px;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.informacion-oficial-oferta a:hover {
+    background: var(--amarillo);
+    color: var(--guinda-oscuro);
+}
+
+/* TABLET */
+
+@media (max-width: 1100px) {
+    .lista-especialidades {
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+    }
+
+    .especialidad {
+        grid-column: span 3;
+    }
+
+    .especialidad:nth-child(5) {
+        grid-column: 1 / span 2;
+    }
+
+    .especialidad:nth-child(6) {
+        grid-column: 3 / span 2;
+    }
+
+    .especialidad:nth-child(7) {
+        grid-column: 5 / span 2;
+    }
+
+    .introduccion-oferta {
+        gap: 40px;
+        padding: 80px 7%;
+    }
+
+    .contenido-eleccion {
+        padding: 45px;
+    }
+}
+
+/* CELULAR */
+
+@media (max-width: 700px) {
+    .portada-oferta {
+        grid-template-columns: 1fr;
+    }
+
+    .contenido-portada-oferta {
+        padding: 65px 7%;
+    }
+
+    .contenido-portada-oferta h2 {
+        font-size: 45px;
+    }
+
+    .portada-oferta::after {
+        min-height: 270px;
+        height: 270px;
+        background-position: center;
+    }
+
+    .introduccion-oferta {
+        grid-template-columns: 1fr;
+        padding: 65px 7%;
+        gap: 35px;
+    }
+
+    .texto-introduccion-oferta h2 {
+        font-size: 30px;
+    }
+
+    .imagen-introduccion-oferta {
+        height: 290px;
+    }
+
+    .seccion-especialidades {
+        padding: 70px 6%;
+    }
+
+    .encabezado-especialidades {
+        margin-bottom: 38px;
+    }
+
+    .encabezado-especialidades h2 {
+        font-size: 30px;
+    }
+
+    .lista-especialidades {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .especialidad,
+    .especialidad:nth-child(5),
+    .especialidad:nth-child(6),
+    .especialidad:nth-child(7) {
+        grid-column: 1;
+    }
+
+    .imagen-especialidad {
+        height: 230px;
+    }
+
+    .contenido-especialidad h3 {
+        min-height: auto;
+    }
+
+    .eleccion-especialidad {
+        padding: 60px 7%;
+    }
+
+    .contenido-eleccion {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 32px 25px;
+        gap: 18px;
+    }
+
+    .contenido-eleccion h2 {
+        font-size: 28px;
+    }
+
+    .contenido-eleccion .boton-oferta {
+        white-space: normal;
+    }
+
+    .informacion-oficial-oferta {
+        grid-template-columns: 1fr;
+        padding: 42px 7%;
+        gap: 22px;
+    }
+
+    .informacion-oficial-oferta h2 {
+        font-size: 23px;
+    }
+
+    .informacion-oficial-oferta a {
+        justify-self: start;
+    }
+}

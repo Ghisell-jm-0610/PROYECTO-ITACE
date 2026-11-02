@@ -1,0 +1,796 @@
+/* CONOCENOS - ITACE DIGITAL 4.0 */
+
+main {
+    overflow: hidden;
+}
+
+.portada-conocenos *,
+.presentacion-conocenos *,
+.historia-conocenos *,
+.mision-vision-conocenos *,
+.valores-conocenos *,
+.cierre-conocenos * {
+    box-sizing: border-box;
+}
+
+.etiqueta-seccion {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: var(--guinda);
+    font-size: 0.78rem;
+    font-weight: bold;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+}
+
+/* Portada */
+
+.portada-conocenos {
+    position: relative;
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    padding: 90px 10%;
+    overflow: hidden;
+    background: var(--guinda-oscuro);
+}
+
+.imagen-portada-conocenos {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.portada-conocenos::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(45, 3, 17, 0.96),
+        rgba(69, 9, 28, 0.78) 50%,
+        rgba(69, 9, 28, 0.12)
+    );
+    z-index: 1;
+}
+
+.texto-portada-conocenos {
+    position: relative;
+    z-index: 2;
+    max-width: 750px;
+}
+
+.texto-portada-conocenos .etiqueta-seccion {
+    color: var(--amarillo);
+    padding-left: 48px;
+    position: relative;
+}
+
+.texto-portada-conocenos .etiqueta-seccion::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 35px;
+    height: 2px;
+    background: var(--amarillo);
+}
+
+.texto-portada-conocenos h1 {
+    color: var(--blanco);
+    font-size: clamp(3.5rem, 8vw, 6.5rem);
+    line-height: 0.98;
+    letter-spacing: -3px;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+}
+
+.texto-portada-conocenos > p:not(.etiqueta-seccion) {
+    max-width: 570px;
+    color: #f4e9ec;
+    font-size: 1.1rem;
+    line-height: 1.9;
+}
+
+.boton-conocenos {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 16px 28px;
+    background: var(--amarillo);
+    color: var(--guinda-oscuro);
+    border: 2px solid var(--amarillo);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.82rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.boton-conocenos:hover {
+    background: transparent;
+    color: var(--blanco);
+}
+
+/* Presentacion */
+
+.presentacion-conocenos {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: center;
+    gap: 75px;
+    padding: 120px 10%;
+    background: var(--fondo);
+}
+
+.texto-presentacion-conocenos {
+    padding-left: 15px;
+}
+
+.texto-presentacion-conocenos .etiqueta-seccion {
+    color: var(--guinda-claro);
+}
+
+.texto-presentacion-conocenos h2 {
+    color: var(--guinda-oscuro);
+    font-size: clamp(2.5rem, 4vw, 3.8rem);
+    line-height: 1.08;
+    margin-bottom: 25px;
+}
+
+.texto-presentacion-conocenos h2::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 5px;
+    margin-top: 25px;
+    background: var(--amarillo);
+}
+
+.texto-presentacion-conocenos > p:not(.etiqueta-seccion) {
+    color: var(--gris);
+    font-size: 1rem;
+    line-height: 1.95;
+    margin-bottom: 17px;
+    text-align: justify;
+}
+
+.imagen-presentacion-conocenos {
+    position: relative;
+    padding: 0 0 30px 30px;
+}
+
+.imagen-presentacion-conocenos::before {
+    content: "";
+    position: absolute;
+    top: -18px;
+    right: -18px;
+    width: 65%;
+    height: 75%;
+    background: var(--amarillo-claro);
+}
+
+.imagen-presentacion-conocenos img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    border: 9px solid var(--blanco);
+    box-shadow: 0 15px 35px rgba(69, 9, 28, 0.14);
+}
+
+.imagen-presentacion-conocenos p {
+    position: relative;
+    width: 85%;
+    margin: -25px 0 0 auto;
+    padding: 20px 24px;
+    background: var(--guinda);
+    color: var(--blanco);
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+/* Historia */
+
+.historia-conocenos {
+    padding: 105px 8%;
+    background: #f3f0ef;
+}
+
+.encabezado-historia {
+    max-width: 850px;
+    margin: 0 auto 65px;
+    text-align: center;
+}
+
+.encabezado-historia .etiqueta-seccion {
+    color: var(--guinda);
+}
+
+.encabezado-historia h2 {
+    color: var(--guinda-oscuro);
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    line-height: 1.08;
+    margin-bottom: 20px;
+}
+
+.encabezado-historia > p:last-child {
+    max-width: 650px;
+    margin: auto;
+    color: var(--gris);
+    line-height: 1.8;
+}
+
+/* Fundador */
+
+.fundador-itace {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    align-items: center;
+    gap: 50px;
+    max-width: 1050px;
+    margin: 0 auto 100px;
+    padding: 35px;
+    background: var(--blanco);
+    border-left: 7px solid var(--guinda);
+    box-shadow: 0 12px 35px rgba(69, 9, 28, 0.10);
+}
+
+.imagen-fundador {
+    position: relative;
+}
+
+.imagen-fundador img {
+    display: block;
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.datos-fundador .etiqueta-seccion {
+    color: var(--guinda-claro);
+}
+
+.datos-fundador h3 {
+    color: var(--guinda-oscuro);
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.datos-fundador > p:not(.etiqueta-seccion) {
+    color: var(--gris);
+    font-size: 1rem;
+    line-height: 1.9;
+    margin-bottom: 22px;
+}
+
+.datos-fundador span {
+    display: inline-block;
+    padding-top: 14px;
+    border-top: 2px solid var(--amarillo);
+    color: var(--guinda);
+    font-weight: bold;
+}
+
+/* Linea del tiempo horizontal */
+
+.linea-tiempo {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    gap: 22px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 35px 5px 30px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scrollbar-color: var(--guinda) #e4dadd;
+    scrollbar-width: thin;
+}
+
+.linea-tiempo::before {
+    content: "";
+    position: absolute;
+    top: 43px;
+    left: 25px;
+    right: 25px;
+    height: 3px;
+    background: var(--guinda);
+}
+
+.evento-historico,
+.evento-historico:nth-child(odd),
+.evento-historico:nth-child(even) {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 300px;
+    width: 300px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    scroll-snap-align: start;
+}
+
+.punto-tiempo {
+    position: relative;
+    z-index: 2;
+    top: auto;
+    left: auto;
+    right: auto;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    margin: 0 0 22px 18px;
+    background: var(--amarillo);
+    border: 5px solid var(--guinda);
+    border-radius: 50%;
+}
+
+.contenido-tiempo {
+    width: 100%;
+    max-width: none;
+    min-height: 355px;
+    padding: 27px;
+    background: var(--blanco);
+    border: 1px solid #e5dfe1;
+    border-top: 5px solid var(--guinda);
+    box-shadow: 0 8px 22px rgba(69, 9, 28, 0.07);
+    transition: 0.3s;
+}
+
+.contenido-tiempo:hover {
+    transform: translateY(-7px);
+    border-top-color: var(--amarillo);
+    box-shadow: 0 15px 28px rgba(69, 9, 28, 0.13);
+}
+
+.anio-historico {
+    color: var(--guinda);
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: -1px;
+    margin-bottom: 17px;
+}
+
+.contenido-tiempo h3 {
+    color: var(--guinda-oscuro);
+    font-size: 1.25rem;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+.contenido-tiempo > p:last-child {
+    color: var(--gris);
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
+.evento-actual .contenido-tiempo {
+    background: var(--guinda);
+    border-color: var(--guinda);
+}
+
+.evento-actual .anio-historico,
+.evento-actual .contenido-tiempo h3 {
+    color: var(--amarillo);
+}
+
+.evento-actual .contenido-tiempo > p:last-child {
+    color: var(--blanco);
+}
+
+.fuente-historica {
+    max-width: 850px;
+    margin: 35px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid #d8cdd0;
+    color: var(--gris);
+    font-size: 0.83rem;
+    line-height: 1.7;
+    text-align: center;
+}
+
+/* Mision y vision */
+
+.mision-vision-conocenos {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    min-height: 440px;
+}
+
+.bloque-mision {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 12%;
+    background: var(--guinda-oscuro);
+}
+
+.bloque-mision .etiqueta-seccion {
+    color: var(--amarillo);
+}
+
+.bloque-mision h2,
+.bloque-vision h2 {
+    font-size: clamp(2.8rem, 5vw, 4.5rem);
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.bloque-mision h2 {
+    color: var(--blanco);
+}
+
+.bloque-mision > p:last-child {
+    max-width: 600px;
+    color: #f1e5e9;
+    font-size: 1.05rem;
+    line-height: 2;
+}
+
+.bloque-vision {
+    display: flex;
+    align-items: center;
+    padding: 65px 12%;
+    background: var(--amarillo-claro);
+}
+
+.texto-vision .etiqueta-seccion {
+    color: var(--guinda);
+}
+
+.texto-vision h2 {
+    color: var(--guinda-oscuro);
+}
+
+.texto-vision > p:last-child {
+    color: var(--guinda-oscuro);
+    font-size: 1.05rem;
+    line-height: 2;
+}
+
+/* Valores */
+
+.valores-conocenos {
+    padding: 110px 10%;
+    background: var(--blanco);
+}
+
+.encabezado-valores {
+    max-width: 850px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.encabezado-valores .etiqueta-seccion {
+    color: var(--guinda-claro);
+}
+
+.encabezado-valores h2 {
+    color: var(--guinda-oscuro);
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    line-height: 1.1;
+    margin-bottom: 22px;
+}
+
+.encabezado-valores > p:last-child {
+    max-width: 700px;
+    margin: auto;
+    color: var(--gris);
+    font-size: 1rem;
+    line-height: 1.9;
+}
+
+.contenido-valores {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.lista-valores {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.valor-institucional {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    min-height: 185px;
+    padding: 35px;
+    background: var(--fondo);
+    border-bottom: 4px solid #e6dfe1;
+    transition: 0.3s;
+}
+
+.valor-institucional:nth-child(2),
+.valor-institucional:nth-child(3) {
+    background: #f1e9e9;
+}
+
+.valor-institucional:hover {
+    background: var(--guinda);
+    border-bottom-color: var(--amarillo);
+    transform: translateY(-6px);
+}
+
+.valor-institucional span {
+    color: var(--amarillo);
+    font-size: 2.7rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.valor-institucional h3 {
+    color: var(--guinda);
+    font-size: 1.4rem;
+    margin-bottom: 13px;
+    transition: 0.3s;
+}
+
+.valor-institucional div p {
+    color: var(--gris);
+    font-size: 0.95rem;
+    line-height: 1.8;
+    transition: 0.3s;
+}
+
+.valor-institucional:hover h3,
+.valor-institucional:hover div p {
+    color: var(--blanco);
+}
+
+/* Cierre */
+
+.cierre-conocenos {
+    position: relative;
+    padding: 105px 10%;
+    overflow: hidden;
+    background: var(--guinda);
+}
+
+.cierre-conocenos::before {
+    content: "ITACE";
+    position: absolute;
+    right: -20px;
+    bottom: -65px;
+    color: rgba(255, 255, 255, 0.035);
+    font-size: clamp(9rem, 22vw, 19rem);
+    font-weight: bold;
+    line-height: 1;
+    pointer-events: none;
+}
+
+.texto-cierre-conocenos {
+    position: relative;
+    z-index: 1;
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+}
+
+.texto-cierre-conocenos .etiqueta-seccion {
+    color: var(--amarillo);
+}
+
+.texto-cierre-conocenos h2 {
+    color: var(--blanco);
+    font-size: clamp(2.6rem, 5vw, 4.5rem);
+    line-height: 1.08;
+    margin-bottom: 25px;
+}
+
+.texto-cierre-conocenos > p:not(.etiqueta-seccion) {
+    color: #eadde2;
+    font-size: 1.05rem;
+    line-height: 1.9;
+}
+
+.texto-cierre-conocenos .boton-conocenos {
+    background: var(--amarillo);
+    border-color: var(--amarillo);
+    color: var(--guinda-oscuro);
+}
+
+.texto-cierre-conocenos .boton-conocenos:hover {
+    background: transparent;
+    color: var(--blanco);
+}
+
+/* Tabletas */
+
+@media (max-width: 900px) {
+    .portada-conocenos {
+        min-height: 560px;
+        padding: 75px 7%;
+    }
+
+    .presentacion-conocenos {
+        gap: 45px;
+        padding: 90px 7%;
+    }
+
+    .historia-conocenos,
+    .valores-conocenos {
+        padding: 85px 7%;
+    }
+
+    .fundador-itace {
+        gap: 30px;
+    }
+
+    .bloque-mision,
+    .bloque-vision {
+        padding: 60px 9%;
+    }
+}
+
+/* Celulares */
+
+@media (max-width: 768px) {
+    .portada-conocenos {
+        min-height: 510px;
+        padding: 60px 7%;
+    }
+
+    .texto-portada-conocenos h1 {
+        font-size: 3.7rem;
+        letter-spacing: -2px;
+    }
+
+    .presentacion-conocenos {
+        grid-template-columns: 1fr;
+        gap: 45px;
+        padding: 75px 8%;
+    }
+
+    .imagen-presentacion-conocenos img {
+        height: 340px;
+    }
+
+    .historia-conocenos {
+        padding: 75px 6%;
+    }
+
+    .fundador-itace {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        margin-bottom: 65px;
+        padding: 25px;
+    }
+
+    .imagen-fundador img {
+        height: 320px;
+    }
+
+    .linea-tiempo {
+        gap: 17px;
+    }
+
+    .evento-historico,
+    .evento-historico:nth-child(odd),
+    .evento-historico:nth-child(even) {
+        flex-basis: 280px;
+        width: 280px;
+    }
+
+    .contenido-tiempo {
+        min-height: 380px;
+    }
+
+    .mision-vision-conocenos {
+        grid-template-columns: 1fr;
+    }
+
+    .bloque-mision,
+    .bloque-vision {
+        padding: 60px 9%;
+    }
+
+    .lista-valores {
+        grid-template-columns: 1fr;
+    }
+
+    .valores-conocenos {
+        padding: 80px 7%;
+    }
+
+    .cierre-conocenos {
+        padding: 80px 7%;
+    }
+}
+
+/* Celulares pequeños */
+
+@media (max-width: 480px) {
+    .portada-conocenos {
+        min-height: 450px;
+        padding: 45px 7%;
+    }
+
+    .texto-portada-conocenos h1 {
+        font-size: 3rem;
+    }
+
+    .texto-portada-conocenos > p:not(.etiqueta-seccion) {
+        font-size: 0.98rem;
+    }
+
+    .presentacion-conocenos {
+        padding: 65px 7%;
+    }
+
+    .texto-presentacion-conocenos {
+        padding-left: 0;
+    }
+
+    .imagen-presentacion-conocenos {
+        padding-left: 15px;
+    }
+
+    .imagen-presentacion-conocenos img {
+        height: 250px;
+        border-width: 6px;
+    }
+
+    .imagen-presentacion-conocenos p {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .encabezado-historia h2,
+    .encabezado-valores h2 {
+        font-size: 2.3rem;
+    }
+
+    .fundador-itace {
+        padding: 18px;
+    }
+
+    .imagen-fundador img {
+        height: 240px;
+    }
+
+    .evento-historico,
+    .evento-historico:nth-child(odd),
+    .evento-historico:nth-child(even) {
+        flex-basis: 265px;
+        width: 265px;
+    }
+
+    .contenido-tiempo {
+        min-height: 410px;
+        padding: 22px;
+    }
+
+    .anio-historico {
+        font-size: 1.8rem;
+    }
+
+    .valor-institucional {
+        min-height: auto;
+        padding: 25px 20px;
+        gap: 17px;
+    }
+
+    .valor-institucional span {
+        font-size: 2.2rem;
+    }
+
+    .cierre-conocenos {
+        padding: 70px 7%;
+    }
+
+    .texto-cierre-conocenos h2 {
+        font-size: 2.5rem;
+    }
+}

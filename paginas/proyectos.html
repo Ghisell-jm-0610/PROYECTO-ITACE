@@ -1,10 +1,12 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyectos estudiantiles | ITACE Reynosa</title>
     <link rel="stylesheet" href="../CSS/estilos ITACE.css">
+    <link rel="stylesheet" href="../CSS/proyectos.css">
+    <link rel="stylesheet" href="../CSS/proyectos.css">
 </head>
 <body>
     <header class="encabezado" id="inicio">
@@ -20,65 +22,538 @@
                 <p>Instituto Tamaulipeco de Capacitación para el Empleo</p>
             </div>
         </div>
-        <nav class="menu" aria-label="Menú principal">
-            <a href="../index.html">Inicio</a>
-            <a href="conocenos.html">Conócenos</a>
-            <a href="oferta-educativa.html">Oferta educativa</a>
-            <a href="instalaciones.html">Instalaciones</a>
-            <a href="vida-estudiantil.html">Vida estudiantil</a>
-            <a href="proyectos.html" class="activo">Proyectos</a>
-            <a href="noticias.html">Noticias</a>
-            <a href="eventos.html">Eventos</a>
-            <a href="admisiones.html">Admisiones</a>
-            <a href="docentes.html">Directorio docente</a>
-            <a href="identidad.html">Identidad ITACE</a>
-            <a href="galeria.html">Galería multimedia</a>
-            <a href="preguntas.html">Preguntas frecuentes</a>
-            <a href="contacto.html">Contacto</a>
-            <a href="creditos.html">Créditos</a>
-        </nav>
-    </header>
+        </header>
+
+  <nav class="menu" aria-label="Menú principal">
+        <a href="../index.html">Bienvenidos</a>
+        <a href="conocenos.html">Conócenos</a>
+        <a href="oferta-educativa.html">Oferta educativa</a>
+        <a href="instalaciones.html">Instalaciones</a>
+        <a href="vida-estudiantil.html">Vida estudiantil</a>
+        <a href="proyectos.html" class="activo">Proyectos</a>
+        <a href="noticias.html">Noticias</a>
+        <a href="admisiones.html">Admisiones</a>
+        <details class="menu-mas">
+            <summary>Más</summary>
+            <div class="submenu">
+                <a href="eventos.html">Eventos</a>
+                <a href="docentes.html">Directorio docente</a>
+                <a href="identidad.html">Identidad ITACE</a>
+                <a href="galeria.html">Galería multimedia</a>
+                <a href="preguntas.html">Preguntas frecuentes</a>
+                <a href="contacto.html">Contacto y ubicación</a>
+                <a href="creditos.html">Créditos</a>
+            </div>
+        </details>
+    </nav>
+    
     <main>
-        <section class="proyectos">
-            <h2>Proyectos estudiantiles</h2>
-            <p>Los proyectos estudiantiles permiten aplicar los conocimientos adquiridos en clase mediante actividades prácticas, creativas y colaborativas. Estas experiencias fortalecen las habilidades técnicas, la investigación y el trabajo en equipo.</p>
-            <h2>Ideas que se convierten en proyectos</h2>
-            <p>Mediante diferentes actividades, los estudiantes pueden desarrollar propuestas, elaborar prototipos, investigar temas de interés y presentar los resultados de su aprendizaje.</p>
+        <!-- Portada -->
+        <section class="portada-proyectos">
+            <div class="contenido-portada-proyectos">
+                <span>Creatividad · Aprendizaje · Innovación</span>
+                <h2>Proyectos estudiantiles</h2>
+                <p>
+                    Ideas que se desarrollan, conocimientos que se aplican
+                    y habilidades que se convierten en experiencias.
+                </p>
+                <a href="#proyectos-destacados">Explorar proyectos</a>
+            </div>
+        </section>
+        <!-- Introducción -->
+        <section class="introduccion-proyectos">
+            <div class="texto-introduccion-proyectos">
+                <span class="etiqueta-proyectos">Aprendizaje práctico</span>
+                <h2>De la teoría a la práctica</h2>
+                <p>
+                    La formación tecnológica del ITACE busca que los
+                    estudiantes relacionen los conocimientos adquiridos
+                    en el aula con actividades prácticas y experiencias
+                    que contribuyan a su preparación académica y laboral.
+                </p>
+                <p>
+                    A través de proyectos, investigaciones, exposiciones,
+                    prototipos y trabajos colaborativos, los alumnos tienen
+                    la oportunidad de desarrollar ideas, resolver problemas
+                    y demostrar las habilidades que adquieren durante su
+                    formación.
+                </p>
+                <p>
+                    Cada actividad representa una oportunidad para aprender,
+                    experimentar, compartir conocimientos y descubrir
+                    nuevas formas de aplicar la preparación técnica.
+                </p>
+            </div>
+        </section>
+        <!-- Tipos de proyectos -->
+        <section class="areas-proyectos" id="tipos-proyectos">
+            <div class="encabezado-seccion-proyectos">
+                <span>Creatividad en acción</span>
+                <h2>¿Qué tipo de proyectos se desarrollan?</h2>
+                <p>
+                    Existen distintas formas de demostrar lo aprendido
+                    y transformar los conocimientos en resultados.
+                </p>
+            </div>
             <div class="contenedor-proyectos">
                 <article class="tarjeta-proyecto">
-                    <img src="../img/proyectos/prototipos.jpeg" alt="Prototipos y modelos escolares" loading="lazy">
-                    <h3>Prototipos y modelos</h3>
-                    <p>El diseño de prototipos permite representar ideas y poner en práctica conocimientos técnicos. Durante su elaboración se desarrollan la creatividad, la resolución de problemas y la capacidad de mejorar propuestas.</p>
+                    <img src="../img/proyectos/prototipos.jpg"
+                         alt="Prototipos y modelos escolares"
+                         loading="lazy">
+                    <div class="contenido-tarjeta-proyecto">
+                        <span>01 · Diseño y creación</span>
+                        <h3>Prototipos y modelos</h3>
+                        <p>
+                            Representaciones físicas o visuales de una idea
+                            que permiten explorar diseños, materiales,
+                            características y posibles soluciones.
+                        </p>
+                    </div>
                 </article>
                 <article class="tarjeta-proyecto">
-                    <img src="../img/proyectos/tecnologia.jpeg" alt="Proyecto relacionado con la tecnología" loading="lazy">
-                    <h3>Proyectos tecnológicos</h3>
-                    <p>Los proyectos tecnológicos permiten explorar herramientas digitales y aplicar conocimientos técnicos. Estas actividades favorecen el aprendizaje práctico y el uso responsable de la tecnología.</p>
+                    <img src="../img/proyectos/tecnologia.jpg"
+                         alt="Proyecto relacionado con la tecnología"
+                         loading="lazy">
+                    <div class="contenido-tarjeta-proyecto">
+                        <span>02 · Tecnología</span>
+                        <h3>Proyectos tecnológicos</h3>
+                        <p>
+                            Aplicación de herramientas digitales y
+                            conocimientos técnicos para desarrollar
+                            propuestas relacionadas con la tecnología.
+                        </p>
+                    </div>
                 </article>
                 <article class="tarjeta-proyecto">
-                    <img src="../img/proyectos/investigacion.jpeg" alt="Investigación escolar" loading="lazy">
-                    <h3>Investigaciones escolares</h3>
-                    <p>La investigación ayuda a recopilar información, analizar datos y presentar conclusiones sobre distintos temas. También fortalece el pensamiento crítico y la comunicación de ideas.</p>
+                    <img src="../img/proyectos/investigacion.jpg"
+                         alt="Investigación escolar"
+                         loading="lazy">
+                    <div class="contenido-tarjeta-proyecto">
+                        <span>03 · Investigación</span>
+                        <h3>Investigaciones escolares</h3>
+                        <p>
+                            Búsqueda, recopilación y análisis de información
+                            para comprender diferentes temas, elaborar
+                            conclusiones y comunicar resultados.
+                        </p>
+                    </div>
                 </article>
                 <article class="tarjeta-proyecto">
-                    <img src="../img/proyectos/exposiciones.jpeg" alt="Exposición de trabajos escolares" loading="lazy">
-                    <h3>Exposiciones de proyectos</h3>
-                    <p>Las exposiciones permiten compartir los resultados de los trabajos realizados. Al presentar sus proyectos, los estudiantes practican la expresión oral y explican el proceso que siguieron.</p>
+                    <img src="../img/proyectos/exposiciones.jpg"
+                         alt="Exposición de trabajos escolares"
+                         loading="lazy">
+                    <div class="contenido-tarjeta-proyecto">
+                        <span>04 · Presentación</span>
+                        <h3>Exposiciones</h3>
+                        <p>
+                            Presentación de trabajos y resultados mediante
+                            explicaciones, demostraciones y recursos
+                            visuales que permiten compartir lo aprendido.
+                        </p>
+                    </div>
                 </article>
                 <article class="tarjeta-proyecto">
-                    <img src="../img/proyectos/equipo.jpeg" alt="Trabajo colaborativo entre estudiantes" loading="lazy">
-                    <h3>Trabajo colaborativo</h3>
-                    <p>La elaboración de proyectos en equipo ayuda a distribuir responsabilidades, escuchar diferentes opiniones y buscar soluciones en conjunto. También promueve el respeto y la organización.</p>
+                    <img src="../img/proyectos/equipo.jpg"
+                         alt="Trabajo colaborativo entre estudiantes"
+                         loading="lazy">
+                    <div class="contenido-tarjeta-proyecto">
+                        <span>05 · Colaboración</span>
+                        <h3>Trabajos en equipo</h3>
+                        <p>
+                            Desarrollo de actividades colaborativas en las
+                            que se organizan tareas, se comparten ideas
+                            y se construyen propuestas en conjunto.
+                        </p>
+                    </div>
                 </article>
                 <article class="tarjeta-proyecto">
-                    <img src="../img/proyectos/practicas.jpeg" alt="Práctica de formación técnica" loading="lazy">
-                    <h3>Prácticas técnicas</h3>
-                    <p>Las actividades prácticas relacionan los contenidos de clase con situaciones reales o simuladas. A través de ellas, los estudiantes refuerzan sus conocimientos y desarrollan habilidades técnicas.</p>
+                    <img src="../img/proyectos/practicas.jpg"
+                         alt="Práctica de formación técnica"
+                         loading="lazy">
+                    <div class="contenido-tarjeta-proyecto">
+                        <span>06 · Aplicación</span>
+                        <h3>Prácticas técnicas</h3>
+                        <p>
+                            Actividades que permiten reforzar conocimientos
+                            mediante ejercicios y experiencias relacionadas
+                            con las especialidades técnicas.
+                        </p>
+                    </div>
                 </article>
             </div>
         </section>
+        <!-- Proyectos y actividades documentadas -->
+        <section class="proyectos-destacados" id="proyectos-destacados">
+            <div class="encabezado-seccion-proyectos">
+                <span>Experiencias del plantel</span>
+                <h2>Proyectos y actividades destacadas</h2>
+                <p>
+                    Acciones académicas, formativas y de vinculación
+                    documentadas en el ITACE Plantel Reynosa.
+                </p>
+            </div>
+            <div class="lista-destacados-proyectos">
+                <!-- Educación Dual: Diseño Gráfico y Programación -->
+                <article class="destacado-proyecto">
+                    <div class="imagen-destacado-proyecto">
+                        <img src="../img/proyectos/dual.jpg"
+                             alt="Estudiantes de Diseño Gráfico y Programación en Educación Dual"
+                             loading="lazy">
+                    </div>
+                    <div class="texto-destacado-proyecto">
+                        <span>2 de octubre de 2026 · Educación Dual</span>
+                        <h3>Estudiantes se integran al Sistema de Educación Dual</h3>
+                        <p>
+                            El ITACE Plantel Reynosa realizó la asignación
+                            de estudiantes de las especialidades de Diseño
+                            Gráfico y Programación para incorporarse al
+                            Sistema de Educación Dual.
+                        </p>
+                        <p>
+                            La empresa CONCEPTOS, especializada en diseño
+                            gráfico e impresión de material publicitario,
+                            recibió a los estudiantes para que fortalezcan
+                            sus conocimientos y desarrollen competencias
+                            profesionales en un entorno laboral real.
+                        </p>
+                        <a href="https://www.schoolandcollegelistings.com/MX/Reynosa/1427390440898725/ITACE-Plantel-Reynosa"
+                           target="_blank" rel="noopener noreferrer">
+                            Consultar publicación
+                        </a>
+                    </div>
+                </article>
+                <!-- Educación Dual: Mantenimiento Automotriz -->
+                <article class="destacado-proyecto">
+                    <div class="imagen-destacado-proyecto">
+                        <img src="../img/proyectos/dual automotriz.jpg"
+                             alt="Estudiantes de Mantenimiento Automotriz en formación laboral"
+                             loading="lazy">
+                    </div>
+                    <div class="texto-destacado-proyecto">
+                        <span>4 de octubre de 2026 · Formación laboral</span>
+                        <h3>Alumnos de Mantenimiento Automotriz participan en Educación Dual</h3>
+                        <p>
+                            Dos estudiantes de Mantenimiento Automotriz
+                            se incorporaron al Programa de Educación Dual
+                            en una agencia automotriz de Reynosa.
+                        </p>
+                        <p>
+                            Mediante esta experiencia, los alumnos pueden
+                            aplicar los conocimientos adquiridos en clase,
+                            desarrollar habilidades técnicas y acercarse
+                            a las actividades propias de su especialidad
+                            dentro del sector productivo.
+                        </p>
+                        <a href="https://www.elmanana.com/amp/local/reynosa/itace-plantel-reynosa-y-su-programa-de-educacion-dual/6192706"
+                           target="_blank" rel="noopener noreferrer">
+                            Leer información completa
+                        </a>
+                    </div>
+                </article>
+                <!-- Proyecto Juntos en Bienestar -->
+                <article class="destacado-proyecto">
+                    <div class="imagen-destacado-proyecto">
+                        <img src="../img/proyectos/bienestar.jpg"
+                             alt="Proyecto Juntos en Bienestar del ITACE Reynosa"
+                             loading="lazy">
+                    </div>
+                    <div class="texto-destacado-proyecto">
+                        <span>15 de agosto de 2025 · Proyecto estudiantil</span>
+                        <h3>Juntos en Bienestar: abordando la ansiedad, depresión y estrés</h3>
+                        <p>
+                            Estudiantes del ITACE Plantel Reynosa
+                            desarrollaron el proyecto denominado
+                            "Juntos en Bienestar: Abordando la ansiedad,
+                            depresión y estrés en la comunidad".
+                        </p>
+                        <p>
+                            La propuesta fue presentada durante una reunión
+                            nacional de autoridades educativas y formó parte
+                            de las iniciativas orientadas al bienestar,
+                            la colaboración y la formación integral
+                            de los jóvenes.
+                        </p>
+                        <a href="https://tamaulipas.gob.mx/2025/08/impulsa-itace-proyectos-estrategicos-en-la-educacion-tecnica-y-media-superior/"
+                           target="_blank" rel="noopener noreferrer">
+                            Consultar información oficial
+                        </a>
+                    </div>
+                </article>
+                <!-- Maratón de Lectura -->
+                <article class="destacado-proyecto">
+                    <div class="imagen-destacado-proyecto">
+                        <img src="../img/proyectos/lectura.jpg"
+                             alt="Estudiantes participando en el Maratón de Lectura"
+                             loading="lazy">
+                    </div>
+                    <div class="texto-destacado-proyecto">
+                        <span>8 de mayo de 2026 · Actividad académica</span>
+                        <h3>Maratón de Lectura para fomentar el hábito de leer</h3>
+                        <p>
+                            Estudiantes del ITACE Reynosa participaron
+                            en una actividad de lectura en voz alta,
+                            recomendaciones de libros e intercambio
+                            de experiencias.
+                        </p>
+                        <p>
+                            La actividad fue coordinada por docentes
+                            y alumnos de la academia de Lengua y Comunicación,
+                            promoviendo la expresión, la comprensión lectora
+                            y el acercamiento a diferentes obras literarias.
+                        </p>
+                        <a href="https://www.elmanana.com/local/reynosa/estudiantes-del-itace-reynosa-participan-en-maraton-de-lectura/6130243"
+                           target="_blank" rel="noopener noreferrer">
+                            Leer información completa
+                        </a>
+                    </div>
+                </article>
+                <!-- ABC de las Emociones -->
+                <article class="destacado-proyecto">
+                    <div class="imagen-destacado-proyecto">
+                        <img src="../img/proyectos/abc - copia.jpeg"
+                             alt="Actividades de la estrategia ABC de las Emociones"
+                             loading="lazy">
+                    </div>
+                    <div class="texto-destacado-proyecto">
+                        <span>27 de septiembre de 2026 · Formación integral</span>
+                        <h3>ABC de las Emociones: actividades para el bienestar estudiantil</h3>
+                        <p>
+                            El plantel desarrolló actividades relacionadas
+                            con la estrategia ABC de las Emociones,
+                            trabajando de manera conjunta con estudiantes
+                            y docentes.
+                        </p>
+                        <p>
+                            A través de espacios de expresión, reflexión
+                            y dinámicas creativas, se busca fortalecer
+                            el autocuidado, la convivencia y el bienestar
+                            de la comunidad estudiantil.
+                        </p>
+                        <a href="https://www.elmanana.com/local/reynosa/itace-plantel-reynosa-y-la-estrategia-abc-de-las-emociones/6190009"
+                           target="_blank" rel="noopener noreferrer">
+                            Leer información completa
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!-- Proceso de elaboración -->
+        <section class="proceso-proyectos">
+            <div class="encabezado-seccion-proyectos">
+                <span>Del planteamiento al resultado</span>
+                <h2>¿Cómo se desarrolla un proyecto?</h2>
+                <p>
+                    Un proyecto puede organizarse en diferentes etapas
+                    que permiten transformar una idea en un resultado.
+                </p>
+            </div>
+            <div class="pasos-proyectos">
+                <article class="paso-proyecto">
+                    <span>01</span>
+                    <h3>Identificación de una idea</h3>
+                    <p>
+                        Se reconoce un tema, necesidad o situación
+                        que se desea investigar o resolver.
+                    </p>
+                </article>
+                <article class="paso-proyecto">
+                    <span>02</span>
+                    <h3>Investigación y planeación</h3>
+                    <p>
+                        Se recopila información, se establecen objetivos
+                        y se organizan las actividades necesarias.
+                    </p>
+                </article>
+                <article class="paso-proyecto">
+                    <span>03</span>
+                    <h3>Diseño y elaboración</h3>
+                    <p>
+                        Se desarrolla la propuesta, se construyen modelos
+                        o se realizan las actividades planeadas.
+                    </p>
+                </article>
+                <article class="paso-proyecto">
+                    <span>04</span>
+                    <h3>Presentación de resultados</h3>
+                    <p>
+                        Se muestran los resultados, se explican los
+                        procedimientos y se comparten los aprendizajes.
+                    </p>
+                </article>
+            </div>
+        </section>
+        <!-- Especialidades -->
+        <section class="especialidades-proyectos">
+            <div class="encabezado-seccion-proyectos">
+                <span>Conocimientos que se aplican</span>
+                <h2>Especialidades del Plantel Reynosa</h2>
+                <p>
+                    Las áreas de formación técnica ofrecen diferentes
+                    campos de conocimiento para desarrollar habilidades
+                    y propuestas.
+                </p>
+            </div>
+            <div class="lista-especialidades-proyectos">
+                <div class="especialidad-proyecto">Mantenimiento Industrial</div>
+                <div class="especialidad-proyecto">Mantenimiento Automotriz</div>
+                <div class="especialidad-proyecto">Diseño Gráfico Digital</div>
+                <div class="especialidad-proyecto">Ciberseguridad</div>
+                <div class="especialidad-proyecto">Semiconductores y Microelectrónica</div>
+                <div class="especialidad-proyecto">Inteligencia Artificial</div>
+                <div class="especialidad-proyecto">Logística</div>
+            </div>
+        </section>
+        <!-- Habilidades -->
+        <section class="habilidades-proyectos">
+            <div class="encabezado-seccion-proyectos">
+                <span>Desarrollo de competencias</span>
+                <h2>Habilidades que se fortalecen</h2>
+                <p>
+                    El desarrollo de proyectos permite trabajar
+                    conocimientos técnicos y habilidades personales.
+                </p>
+            </div>
+            <div class="contenedor-habilidades-proyectos">
+                <article class="habilidad-proyecto">
+                    <h3>Creatividad</h3>
+                    <p>
+                        Generar ideas y encontrar diferentes maneras
+                        de desarrollar una propuesta.
+                    </p>
+                </article>
+                <article class="habilidad-proyecto">
+                    <h3>Pensamiento crítico</h3>
+                    <p>
+                        Analizar información, comparar alternativas
+                        y tomar decisiones fundamentadas.
+                    </p>
+                </article>
+                <article class="habilidad-proyecto">
+                    <h3>Resolución de problemas</h3>
+                    <p>
+                        Identificar dificultades y proponer soluciones
+                        mediante los conocimientos adquiridos.
+                    </p>
+                </article>
+                <article class="habilidad-proyecto">
+                    <h3>Trabajo en equipo</h3>
+                    <p>
+                        Compartir responsabilidades, escuchar opiniones
+                        y colaborar para alcanzar objetivos.
+                    </p>
+                </article>
+                <article class="habilidad-proyecto">
+                    <h3>Comunicación</h3>
+                    <p>
+                        Explicar procesos, presentar resultados
+                        y compartir ideas de manera clara.
+                    </p>
+                </article>
+                <article class="habilidad-proyecto">
+                    <h3>Organización</h3>
+                    <p>
+                        Planear actividades, administrar recursos
+                        y cumplir con las tareas establecidas.
+                    </p>
+                </article>
+            </div>
+        </section>
+        <!-- Vinculación -->
+        <section class="vinculacion-proyectos">
+            <div class="contenido-vinculacion-proyectos">
+                <span>Experiencia profesional</span>
+                <h2>Aprender también fuera del aula</h2>
+                <p>
+                    La vinculación con empresas e instituciones permite
+                    acercar la formación académica a diferentes entornos
+                    profesionales.
+                </p>
+                <p>
+                    Mediante iniciativas como el Sistema de Educación Dual,
+                    los estudiantes pueden complementar sus estudios con
+                    experiencias de aprendizaje en espacios laborales,
+                    de acuerdo con su especialidad y los programas
+                    correspondientes.
+                </p>
+                <p>
+                    Estas experiencias contribuyen al desarrollo de
+                    competencias técnicas y al conocimiento de las
+                    actividades propias del sector productivo.
+                </p>
+            </div>
+        </section>
+        <!-- Espacio para trabajos destacados -->
+        <section class="galeria-trabajos-proyectos">
+            <div class="encabezado-seccion-proyectos">
+                <span>Talento estudiantil</span>
+                <h2>Trabajos destacados</h2>
+                <p>
+                    Un espacio para conocer las creaciones, investigaciones,
+                    exposiciones y propuestas realizadas por los estudiantes.
+                </p>
+            </div>
+            <div class="contenedor-trabajos-proyectos">
+                <article class="trabajo-proyecto">
+                    <img src="../img/proyectos/creacion.jpg"
+                         alt="Trabajo estudiantil destacado"
+                         loading="lazy">
+                    <div>
+                        <h3>Proyectos y creaciones</h3>
+                        <p>
+                            Trabajos elaborados por estudiantes durante
+                            sus actividades de formación.
+                        </p>
+                    </div>
+                </article>
+                <article class="trabajo-proyecto">
+                    <img src="../img/proyectos/trabajo des.jpg"
+                         alt="Exposición de un proyecto estudiantil"
+                         loading="lazy">
+                    <div>
+                        <h3>Exposiciones escolares</h3>
+                        <p>
+                            Presentaciones en las que los alumnos
+                            comparten sus conocimientos y resultados.
+                        </p>
+                    </div>
+                </article>
+                <article class="trabajo-proyecto">
+                    <img src="../img/proyectos/proyecto des. 3.jpg"
+                         alt="Prototipo elaborado por estudiantes"
+                         loading="lazy">
+                    <div>
+                        <h3>Modelos y prototipos</h3>
+                        <p>
+                            Representaciones y propuestas desarrolladas
+                            mediante conocimientos técnicos.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!-- Cierre -->
+        <section class="cierre-proyectos">
+            <div class="contenido-cierre-proyectos">
+                <span>ITACE Plantel Reynosa</span>
+                <h2>El aprendizaje también se construye creando.</h2>
+                <p>
+                    Cada proyecto representa una oportunidad para
+                    descubrir capacidades, compartir conocimientos
+                    y desarrollar nuevas ideas para el futuro.
+                </p>
+                <div class="botones-cierre-proyectos">
+                    <a href="oferta-educativa.html" class="boton-proyectos">
+                        Conoce la oferta educativa
+                    </a>
+                    <a href="vida-estudiantil.html"
+                       class="boton-proyectos secundario">
+                        Vida estudiantil
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
- <footer class="pie-pagina">
+    <footer class="pie-pagina">
         <div class="contenido-pie">
             <div class="identidad-pie">
                 <img src="../img/logo itace.jpeg" alt="Logotipo del ITACE">
