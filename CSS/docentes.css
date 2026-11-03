@@ -1,0 +1,682 @@
+/* DIRECTORIO DOCENTE - ITACE */
+
+/* COLORES */
+:root {
+    --guinda: #750d2b;
+    --guinda-oscuro: #45091c;
+    --guinda-claro: #963650;
+    --dorado: #e8bd3f;
+    --crema: #f8f5f0;
+    --blanco: #ffffff;
+    --texto: #333333;
+    --gris: #777777;
+    --borde: #e9dfe1;
+}
+
+/* FONDO GENERAL */
+.directorio-docentes {
+    padding-bottom: 65px;
+    color: var(--texto);
+    background: var(--crema);
+}
+
+/* PORTADA */
+.portada-docentes {
+    position: relative;
+    overflow: hidden;
+    min-height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 65px 10%;
+    color: var(--blanco);
+    background:
+        radial-gradient(circle at 85% 25%, rgba(232,189,63,0.20), transparent 25%),
+        linear-gradient(115deg, var(--guinda-oscuro), var(--guinda), var(--guinda-claro));
+}
+
+.portada-docentes::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    right: 8%;
+    bottom: -165px;
+    border: 2px solid rgba(232,189,63,0.55);
+    border-radius: 50%;
+    box-shadow: 0 0 0 25px rgba(232,189,63,0.07),
+                0 0 0 55px rgba(232,189,63,0.04);
+}
+
+.portada-docentes::after {
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    right: 22%;
+    top: 45px;
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius: 50%;
+}
+
+.portada-docentes h2 {
+    position: relative;
+    z-index: 1;
+    max-width: 750px;
+    margin: 0 0 18px;
+    font-size: clamp(2.3rem, 5vw, 3.8rem);
+    line-height: 1.1;
+    letter-spacing: -1px;
+}
+
+.portada-docentes p {
+    position: relative;
+    z-index: 1;
+    max-width: 620px;
+    margin: 0;
+    color: #f7e7a6;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+/* INTRODUCCIÓN */
+.introduccion-docentes {
+    position: relative;
+    overflow: hidden;
+    max-width: 1100px;
+    margin: 65px auto 45px;
+    padding: 55px 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background:
+        radial-gradient(circle at 92% 15%, rgba(232,189,63,0.18), transparent 22%),
+        linear-gradient(120deg, #45091c, #750d2b 75%, #963650);
+    border-radius: 4px 35px 4px 35px;
+    box-shadow: 0 16px 35px rgba(69,9,28,0.16);
+}
+
+.introduccion-docentes::before {
+    content: "ITACE / PLANTEL REYNOSA";
+    display: inline-block;
+    margin-bottom: 25px;
+    padding: 8px 15px;
+    color: #f7e7a6;
+    border: 1px solid rgba(232,189,63,0.55);
+    border-radius: 3px;
+    font-size: 0.72rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.introduccion-docentes::after {
+    content: "01";
+    position: absolute;
+    right: 55px;
+    bottom: -50px;
+    color: rgba(255,255,255,0.055);
+    font-family: Georgia, serif;
+    font-size: 13rem;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+.introduccion-docentes h2 {
+    position: relative;
+    z-index: 1;
+    max-width: 750px;
+    margin: 0 0 22px;
+    color: var(--blanco);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.2rem, 5vw, 3.5rem);
+    font-weight: normal;
+    line-height: 1.15;
+}
+
+.introduccion-docentes h2::after {
+    content: "";
+    display: block;
+    width: 95px;
+    height: 4px;
+    margin-top: 22px;
+    background: var(--dorado);
+    border-radius: 5px;
+}
+
+.introduccion-docentes p {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+    margin: 0;
+    color: #f4e8eb;
+    font-size: 1.02rem;
+    line-height: 2;
+}
+
+/* BUSCADOR */
+.busqueda-docentes {
+    max-width: 1100px;
+    margin: 35px auto 65px;
+    overflow: hidden;
+    background: var(--blanco);
+    border: 1px solid var(--borde);
+    border-radius: 15px;
+    box-shadow: 0 12px 35px rgba(69,9,28,0.08);
+}
+
+.encabezado-busqueda {
+    padding: 35px 45px 28px;
+    background: #fcf9f7;
+    border-bottom: 1px solid var(--borde);
+}
+
+.encabezado-busqueda span {
+    display: block;
+    margin-bottom: 14px;
+    color: #a88a43;
+    font-size: 0.72rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.encabezado-busqueda h2 {
+    margin: 0 0 12px;
+    color: var(--guinda);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.8rem, 4vw, 2.4rem);
+}
+
+.encabezado-busqueda p {
+    max-width: 650px;
+    margin: 0;
+    color: #686868;
+    font-size: 0.96rem;
+    line-height: 1.8;
+}
+
+/* FILTROS */
+.filtros-docentes {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    padding: 35px 45px 25px;
+}
+
+.campo-docente {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.campo-docente label {
+    color: var(--guinda-oscuro);
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.campo-docente input,
+.campo-docente select {
+    width: 100%;
+    min-width: 0;
+    min-height: 53px;
+    padding: 14px 17px;
+    color: var(--texto);
+    background: var(--blanco);
+    border: 1px solid #e5d5d9;
+    border-radius: 7px;
+    font-family: inherit;
+    font-size: 0.94rem;
+    outline: none;
+    transition: 0.25s;
+}
+
+.campo-docente input::placeholder {
+    color: #92868a;
+}
+
+.campo-docente input:focus,
+.campo-docente select:focus {
+    border-color: var(--guinda-claro);
+    box-shadow: 0 0 0 3px rgba(117,13,43,0.10);
+}
+
+/* LIMPIAR FILTROS */
+.acciones-docentes {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 45px 30px;
+}
+
+#limpiarFiltros {
+    min-width: 175px;
+    padding: 13px 22px;
+    color: var(--blanco);
+    background: var(--guinda);
+    border: none;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 0.88rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+#limpiarFiltros:hover {
+    background: var(--guinda-oscuro);
+    transform: translateY(-2px);
+}
+
+/* RESULTADOS */
+.resultados-docentes {
+    max-width: 1250px;
+    margin: auto;
+    padding: 0 25px;
+}
+
+#contadorDocentes {
+    margin: 0 0 28px;
+    padding-bottom: 15px;
+    color: var(--guinda);
+    border-bottom: 2px solid var(--borde);
+    font-size: 1.05rem;
+    font-weight: bold;
+}
+
+/* CUADRÍCULA */
+#tarjetasDocentes {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+/* TARJETAS */
+.tarjeta-docente {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    min-width: 0;
+    padding: 20px;
+    background: var(--blanco);
+    border: 1px solid var(--borde);
+    border-radius: 12px;
+    box-shadow: 0 5px 16px rgba(69,9,28,0.05);
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.tarjeta-docente::before {
+    display: none;
+}
+
+.tarjeta-docente:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(69,9,28,0.11);
+}
+
+/* FOTOGRAFÍAS */
+.foto-docente {
+    flex-shrink: 0;
+    width: 78px;
+    height: 78px;
+    margin: 0;
+    object-fit: cover;
+    object-position: center;
+    background: #f1e7ea;
+    border: none;
+    border-radius: 10px;
+}
+
+/* AVATAR GENÉRICO */
+.avatar-docente {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--guinda);
+    background: #f1e7ea;
+}
+
+.avatar-docente svg {
+    width: 58%;
+    height: 58%;
+}
+
+/* INFORMACIÓN DE LA TARJETA */
+.datos-docente {
+    flex: 1;
+    min-width: 0;
+    padding: 0;
+}
+
+.datos-docente h3 {
+    margin: 0 0 12px;
+    color: var(--guinda-oscuro);
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+}
+
+/* BOTÓN VER PERFIL */
+.btn-perfil {
+    padding: 9px 17px;
+    color: var(--blanco);
+    background: var(--guinda);
+    border: none;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 0.85rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-perfil:hover {
+    background: var(--guinda-oscuro);
+}
+
+.btn-perfil:focus-visible,
+#limpiarFiltros:focus-visible,
+.cerrar-perfil:focus-visible {
+    outline: 3px solid var(--dorado);
+    outline-offset: 3px;
+}
+
+/* VENTANA DEL PERFIL */
+.perfil-docente {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(35,10,18,0.75);
+    overflow-y: auto;
+}
+
+.contenido-perfil {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(170px, 230px) minmax(0, 1fr);
+    column-gap: 30px;
+    align-items: start;
+    width: 100%;
+    max-width: 850px;
+    max-height: 90vh;
+    padding: 40px;
+    overflow-y: auto;
+    color: var(--texto);
+    background: var(--blanco);
+    border-top: 6px solid var(--dorado);
+    border-radius: 12px;
+    box-shadow: 0 20px 55px rgba(0,0,0,0.25);
+    animation: aparecerPerfil 0.25s ease;
+}
+
+@keyframes aparecerPerfil {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.cerrar-perfil {
+    position: absolute;
+    top: 12px;
+    right: 17px;
+    width: 38px;
+    height: 38px;
+    color: var(--guinda);
+    background: #f8edf0;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.7rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.cerrar-perfil:hover {
+    color: var(--blanco);
+    background: var(--guinda);
+}
+
+/* FOTO DEL PERFIL */
+.foto-perfil {
+    display: block;
+    grid-column: 1;
+    grid-row: 1 / span 8;
+    width: 100%;
+    max-width: 230px;
+    height: 280px;
+    margin: 15px auto 0;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+    background: #f1e7ea;
+}
+
+.avatar-docente.foto-perfil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 280px;
+    margin: 15px auto 0;
+}
+
+/* INFORMACIÓN DEL PERFIL */
+.contenido-perfil h2 {
+    grid-column: 2;
+    margin: 10px 0 20px;
+    padding-right: 25px;
+    color: var(--guinda);
+    text-align: left;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.6rem;
+    line-height: 1.3;
+    overflow-wrap: anywhere;
+}
+
+.contenido-perfil p {
+    grid-column: 2;
+    margin: 0;
+    padding: 12px 0;
+    color: #555555;
+    border-bottom: 1px solid #eee5e7;
+    font-size: 0.94rem;
+    line-height: 1.7;
+    overflow-wrap: anywhere;
+}
+
+.contenido-perfil strong {
+    color: var(--guinda-oscuro);
+}
+
+/* CELULARES */
+@media (max-width: 600px) {
+    .perfil-docente {
+        padding: 12px;
+    }
+
+    .contenido-perfil {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        max-height: 94vh;
+        padding: 35px 22px 25px;
+    }
+
+    .foto-perfil,
+    .avatar-docente.foto-perfil {
+        width: 190px;
+        max-width: 100%;
+        height: 220px;
+        margin: 10px auto 22px;
+    }
+
+    .contenido-perfil h2 {
+        margin: 0 0 18px;
+        padding: 0;
+        text-align: center;
+        font-size: 1.35rem;
+    }
+
+    .contenido-perfil p {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+}
+/* MENSAJES */
+#sinResultados,
+#errorDirectorio {
+    padding: 30px 20px;
+    color: var(--gris);
+    background: var(--blanco);
+    border: 1px dashed #cdbdc1;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 1.8;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+/* CIERRE */
+.cierre-docentes {
+    max-width: 1100px;
+    margin: 65px auto 0;
+    padding: 35px;
+    color: var(--blanco);
+    background: linear-gradient(110deg, var(--guinda-oscuro), var(--guinda));
+    border-left: 6px solid var(--dorado);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.cierre-docentes p {
+    margin: 0;
+    line-height: 1.9;
+}
+
+/* TABLETAS */
+@media (max-width: 950px) {
+    #tarjetasDocentes {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .busqueda-docentes {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .introduccion-docentes {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
+
+/* CELULARES */
+@media (max-width: 600px) {
+    .portada-docentes {
+        min-height: 270px;
+        padding: 45px 25px;
+    }
+
+    .introduccion-docentes {
+        margin: 40px 15px 35px;
+        padding: 40px 22px 28px;
+        border-radius: 4px 25px 4px 25px;
+    }
+
+    .introduccion-docentes::before {
+        font-size: 0.62rem;
+        letter-spacing: 2px;
+    }
+
+    .introduccion-docentes::after {
+        right: 10px;
+        bottom: -25px;
+        font-size: 8rem;
+    }
+
+    .introduccion-docentes h2 {
+        font-size: 2.1rem;
+    }
+
+    .introduccion-docentes p {
+        font-size: 0.93rem;
+    }
+
+    .busqueda-docentes {
+        margin: 20px 15px 45px;
+    }
+
+    .encabezado-busqueda {
+        padding: 28px 23px;
+    }
+
+    .encabezado-busqueda h2 {
+        font-size: 1.8rem;
+    }
+
+    .filtros-docentes {
+        grid-template-columns: 1fr;
+        gap: 17px;
+        padding: 25px 23px;
+    }
+
+    .acciones-docentes {
+        padding: 0 23px 25px;
+    }
+
+    #limpiarFiltros {
+        width: 100%;
+    }
+
+    #tarjetasDocentes {
+        grid-template-columns: 1fr;
+    }
+
+    .resultados-docentes {
+        padding: 0 15px;
+    }
+
+    .tarjeta-docente {
+        padding: 16px;
+    }
+
+    .foto-docente {
+        width: 68px;
+        height: 68px;
+    }
+
+    .contenido-perfil {
+        padding: 30px 22px;
+    }
+
+    .contenido-perfil h2 {
+        font-size: 1.3rem;
+    }
+
+    .foto-perfil {
+        width: 180px;
+        height: 180px;
+        margin: 10px auto 22px;
+    }
+
+    .avatar-docente.foto-perfil {
+        width: 180px;
+        height: 180px;
+    }
+
+    .cierre-docentes {
+        margin: 45px 15px 0;
+        padding: 25px 20px;
+    }
+}
