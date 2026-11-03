@@ -685,3 +685,55 @@
         transition: none;
     }
 }
+
+/* Ajustes para celulares */
+@media (max-width: 768px) {
+
+    * {
+        box-sizing: border-box;
+    }
+
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    main, section, article, .contenedor, .container {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    img, iframe, video {
+        max-width: 100%;
+        height: auto;
+    }
+
+    form {
+        width: 100%;
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    input, select, textarea, button {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        overflow-wrap: break-word;
+    }
+
+    .contenedor, .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+}

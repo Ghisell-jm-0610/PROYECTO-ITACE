@@ -308,7 +308,7 @@
     "semestres": ["3.º", "5.º"],
     "antiguedad": null,
     "perfil": "Docente con formación técnica en refrigeración y climatización, además de estudios en educación.",
-    "foto": "",
+    "foto": "../img/docentes/alonso.jpeg",
     "validado": false
   },
   {
