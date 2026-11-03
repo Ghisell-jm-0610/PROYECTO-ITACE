@@ -113,3 +113,19 @@ tarjetasEspecialidad.forEach(tarjeta => {
 
     }
 });
+
+// REPRODUCCION
+
+document.addEventListener("DOMContentLoaded", () => {
+    const videos = document.querySelectorAll("video");
+
+    videos.forEach((video) => {
+        video.addEventListener("play", () => {
+            videos.forEach((otroVideo) => {
+                if (otroVideo !== video) {
+                    otroVideo.pause();
+                }
+            });
+        });
+    });
+});

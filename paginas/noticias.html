@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vida estudiantil | ITACE Reynosa</title>
+    <title>Noticias | ITACE Reynosa</title>
     <link rel="stylesheet" href="../CSS/estilos ITACE.css">
+    <link rel="stylesheet" href="../CSS/noticias.css">
 </head>
 <body>
+
     <header class="encabezado" id="inicio">
         <div class="barra-superior">
             <a href="../index.html" class="identidad">
@@ -16,88 +18,366 @@
                     <p>Plantel Reynosa</p>
                 </div>
             </a>
+
             <div class="texto-encabezado">
                 <p>Instituto Tamaulipeco de Capacitación para el Empleo</p>
             </div>
         </div>
-        <nav class="menu" aria-label="Menú principal">
-            <a href="../index.html">Inicio</a>
-            <a href="conocenos.html">Conócenos</a>
-            <a href="oferta-educativa.html">Oferta educativa</a>
-            <a href="instalaciones.html">Instalaciones</a>
-            <a href="vida-estudiantil.html">Vida estudiantil</a>
-            <a href="proyectos.html">Proyectos</a>
-            <a href="noticias.html" class="activo">Noticias</a>
-            <a href="eventos.html">Eventos</a>
-            <a href="admisiones.html">Admisiones</a>
-            <a href="docentes.html">Directorio docente</a>
-            <a href="identidad.html">Identidad ITACE</a>
-            <a href="galeria.html">Galería multimedia</a>
-            <a href="preguntas.html">Preguntas frecuentes</a>
-            <a href="contacto.html">Contacto</a>
-            <a href="creditos.html">Créditos</a>
-        </nav>
     </header>
+
+    <!-- MENÚ PRINCIPAL -->
+    <nav class="menu" aria-label="Menú principal">
+        <a href="../index.html">Bienvenidos</a>
+        <a href="conocenos.html">Conócenos</a>
+        <a href="oferta-educativa.html">Oferta educativa</a>
+        <a href="instalaciones.html">Instalaciones</a>
+        <a href="vida-estudiantil.html">Vida estudiantil</a>
+        <a href="proyectos.html">Proyectos</a>
+        <a href="noticias.html" class="activo">Noticias</a>
+        <a href="admisiones.html">Admisiones</a>
+
+        <details class="menu-mas">
+            <summary>Más</summary>
+            <div class="submenu">
+                <a href="eventos.html">Eventos</a>
+                <a href="docentes.html">Directorio docente</a>
+                <a href="identidad.html">Identidad ITACE</a>
+                <a href="galeria.html">Galería multimedia</a>
+                <a href="preguntas.html">Preguntas frecuentes</a>
+                <a href="contacto.html">Contacto y ubicación</a>
+                <a href="creditos.html">Créditos</a>
+            </div>
+        </details>
+    </nav>
 
     <main>
         <section class="noticias">
+
             <h2>Noticias del ITACE</h2>
-            <p>Conoce las acciones, los logros y las actividades relacionadas con el Instituto Tamaulipeco de Capacitación para el Empleo. Este espacio reúne una selección de publicaciones institucionales para mantener informada a la comunidad educativa.</p>
 
-            <h2>Información institucional</h2>
+            <p>
+                Conoce las acciones, los logros y las actividades del
+                Instituto Tamaulipeco de Capacitación para el Empleo.
+                En este espacio encontrarás las noticias y acontecimientos
+                más recientes del ITACE Plantel Reynosa.
+            </p>
+
+            <h2>Noticias y actividades recientes</h2>
+
             <div class="contenedor-noticias">
+
+                <!-- 1 -->
                 <article class="tarjeta-noticia">
-                    <p class="fecha-noticia">7 de junio de 2026</p>
-                    <h3>Tamaulipas recibirá el XXII Encuentro Nacional Deportivo CECyTE 2026</h3>
-                    <p>La publicación institucional informa sobre la realización del encuentro deportivo nacional, que reuniría a estudiantes de distintos estados del país.</p>
-                    <a href="https://itace.edu.mx/prensa/" target="_blank" rel="noopener noreferrer">Consultar en la sala de prensa</a>
+                    <img src="../img/noticias/sec. 7.jpg"
+                         alt="Visita del ITACE a la Escuela Secundaria General número 7">
+                    <p class="fecha-noticia">1 de noviembre de 2026</p>
+                    <h3>ITACE Reynosa acerca su oferta educativa a estudiantes de secundaria</h3>
+                    <p>
+                        Personal del área de Vinculación visitó la Escuela
+                        Secundaria General N.º 7 para compartir con estudiantes
+                        de tercer grado información sobre las opciones
+                        educativas y técnicas que ofrece el plantel.
+                    </p>
                 </article>
 
+                <!-- 2 -->
                 <article class="tarjeta-noticia">
-                    <p class="fecha-noticia">4 de junio de 2026</p>
-                    <h3>ITACE y Voluntariado de la SSPT amplían oportunidades de capacitación</h3>
-                    <p>La publicación aborda acciones de colaboración para ampliar las oportunidades de capacitación dirigidas a familias tamaulipecas.</p>
-                    <a href="https://itace.edu.mx/prensa/" target="_blank" rel="noopener noreferrer">Consultar en la sala de prensa</a>
+                    <img src="../img/noticias/deporte.jpg"
+                         alt="Equipos deportivos del ITACE Plantel Reynosa">
+                    <p class="fecha-noticia">1 de noviembre de 2026</p>
+                    <h3>Talento deportivo del ITACE Plantel Reynosa</h3>
+                    <p>
+                        Los equipos femeniles de voleibol y fútbol, así como
+                        el equipo varonil de béisbol, representan al plantel
+                        en ligas municipales y torneos interescolares,
+                        demostrando su esfuerzo y compromiso deportivo.
+                    </p>
                 </article>
 
+                <!-- 3 -->
                 <article class="tarjeta-noticia">
-                    <p class="fecha-noticia">27 de mayo de 2026</p>
-                    <h3>ITACE y el Congreso del Estado impulsan nuevas oportunidades de capacitación</h3>
-                    <p>La nota institucional presenta acciones de colaboración orientadas a generar nuevas oportunidades de capacitación para la población de Tamaulipas.</p>
-                    <a href="https://itace.edu.mx/prensa/" target="_blank" rel="noopener noreferrer">Consultar en la sala de prensa</a>
+                    <img src="../img/noticias/dia de muertos.jpg"
+                         alt="Altar y actividades del Día de Muertos en el ITACE">
+                    <p class="fecha-noticia">31 de octubre de 2026</p>
+                    <h3>ITACE Plantel Reynosa celebra el Día de Muertos</h3>
+                    <p>
+                        La comunidad educativa participó en la elaboración
+                        de un altar dedicado al personal del ITACE fallecido
+                        y en un concurso de catrinas y catrines, promoviendo
+                        las tradiciones y la identidad cultural mexicana.
+                    </p>
                 </article>
 
+                <!-- 4 -->
                 <article class="tarjeta-noticia">
-                    <p class="fecha-noticia">25 de mayo de 2026</p>
-                    <h3>Estudiante del ITACE obtiene el tercer lugar nacional en el Festival Académico 2026</h3>
-                    <p>El ITACE publicó el reconocimiento a un estudiante por su participación y resultado en el Festival Académico 2026.</p>
-                    <a href="https://itace.edu.mx/prensa/" target="_blank" rel="noopener noreferrer">Consultar en la sala de prensa</a>
+                    <img src="../img/noticias/sec. 60.jpg"
+                         alt="Visita de Vinculación a la Escuela Secundaria Técnica número 60">
+                    <p class="fecha-noticia">30 de octubre de 2026</p>
+                    <h3>ITACE Reynosa comparte su oferta educativa en la Secundaria Técnica N.º 60</h3>
+                    <p>
+                        El Departamento de Vinculación visitó a estudiantes
+                        de tercer grado para presentar las oportunidades
+                        académicas y técnicas del instituto, además de
+                        entregar material informativo.
+                    </p>
                 </article>
 
+                <!-- 5 -->
                 <article class="tarjeta-noticia">
-                    <p class="fecha-noticia">13 de mayo de 2026</p>
-                    <h3>ITACE renueva acreditación de evaluación y certificación laboral</h3>
-                    <p>La publicación informa sobre la renovación de la acreditación institucional relacionada con los procesos de evaluación y certificación laboral.</p>
-                    <a href="https://itace.edu.mx/prensa/" target="_blank" rel="noopener noreferrer">Consultar en la sala de prensa</a>
+                    <img src="../img/noticias/sec. 73.jpg"
+                         alt="Visita informativa a la Escuela Secundaria Técnica número 73">
+                    <p class="fecha-noticia">30 de octubre de 2026</p>
+                    <h3>Promoción educativa en la Escuela Secundaria Técnica N.º 73</h3>
+                    <p>
+                        Personal del ITACE Reynosa realizó una visita
+                        informativa para dar a conocer su oferta educativa
+                        y las alternativas de formación técnica a los
+                        próximos egresados de secundaria.
+                    </p>
                 </article>
 
+                <!-- 6 -->
                 <article class="tarjeta-noticia">
-                    <p class="fecha-noticia">19 de febrero de 2026</p>
-                    <h3>ITACE y el Tecnológico Nacional de México firman un acuerdo de colaboración</h3>
-                    <p>El acuerdo busca favorecer el acceso de estudiantes a oportunidades de educación superior tecnológica.</p>
-                    <a href="https://itace.edu.mx/prensa/" target="_blank" rel="noopener noreferrer">Consultar en la sala de prensa</a>
+                    <img src="../img/noticias/sec. 15.jpg"
+                         alt="Banda de Guerra, Escolta y Danza durante ceremonia cívica">
+                    <p class="fecha-noticia">30 de octubre de 2026</p>
+                    <h3>Banda de Guerra, Escolta y Danza participan en ceremonia cívica</h3>
+                    <p>
+                        Los grupos representativos del plantel participaron
+                        en los honores a la bandera de la Escuela Secundaria
+                        General N.º 15 Enrique N. Rodríguez Alonso.
+                        Durante la visita también se compartió información
+                        sobre la oferta educativa del ITACE.
+                    </p>
                 </article>
+
+                <!-- 7 -->
+                <article class="tarjeta-noticia">
+                    <img src="../img/noticias/sec. 60 banda.jpg"
+                         alt="Banda de Guerra y Grupo de Danza del ITACE">
+                    <p class="fecha-noticia">27 de octubre de 2026</p>
+                    <h3>Banda de Guerra y Danza del ITACE participan en ceremonia cívica</h3>
+                    <p>
+                        La Banda de Guerra y el Grupo de Danza acudieron
+                        a la Escuela Secundaria Técnica N.º 60 Guillermo
+                        González Camarena para participar en los honores
+                        a la bandera y compartir información sobre el plantel.
+                    </p>
+                </article>
+
+                <!-- 8 -->
+                <article class="tarjeta-noticia">
+                    <img src="../img/noticias/cuentos.jpg"
+                         alt="Participación del ITACE en el Maratón de Cuentos, Mitos y Leyendas">
+                    <p class="fecha-noticia">23 de octubre de 2026</p>
+                    <h3>ITACE Reynosa participa en el Maratón de Cuentos, Mitos y Leyendas de Tamaulipas</h3>
+                    <p>
+                        La directora del plantel, C.P. Marta Gabriela Reyes
+                        Anaya, personal docente y estudiantes participaron
+                        en esta actividad cultural, acompañados por la
+                        maestra Sandra Silva Camacho, para promover la
+                        lectura y la identidad tamaulipeca.
+                    </p>
+                </article>
+
+                <!-- 9 -->
+                <article class="tarjeta-noticia">
+                    <img src="../img/noticias/paz.jpg"
+                         alt="Actividades del programa ABC de las Emociones">
+                    <p class="fecha-noticia">21 de octubre de 2026</p>
+                    <h3>Actividades del programa ABC de las Emociones</h3>
+                    <p>
+                        Estudiantes del turno vespertino participaron en
+                        actividades lúdicas enfocadas en el reconocimiento
+                        y la expresión de emociones, fortaleciendo la
+                        convivencia y el desarrollo socioemocional.
+                    </p>
+                </article>
+
+                <!-- 10 -->
+                <article class="tarjeta-noticia">
+                    <img src="../img/noticias/ajedrez.jpg"
+                         alt="Torneo amistoso de ajedrez en el ITACE">
+                    <p class="fecha-noticia">21 de octubre de 2026</p>
+                    <h3>Torneo amistoso de ajedrez en el ITACE Reynosa</h3>
+                    <p>
+                        Como parte de las actividades del programa ABC de
+                        las Emociones, se realizó un torneo amistoso de
+                        ajedrez. Los estudiantes reconocidos fueron
+                        Carlos Naín Castillo Rivas, Saúl Guadalupe Salazar
+                        Hernández y José Israel Méndez Bustos.
+                    </p>
+                </article>
+
+                <!-- 11 -->
+                <article class="tarjeta-noticia">
+                    <img src="../img/noticias/cancer.jpg"
+                         alt="Plática de prevención y concientización sobre el cáncer de mama">
+                    <p class="fecha-noticia">21 de octubre de 2026</p>
+                    <h3>Promueven la prevención del cáncer de mama</h3>
+                    <p>
+                        Durante la Semana Internacional de la Concientización
+                        sobre el Cáncer de Mama, personal del IMSS impartió
+                        pláticas sobre la autoexploración, la prevención
+                        y la importancia de la detección oportuna.
+                    </p>
+                </article>
+
+                <!-- 12 -->
+                <article class="tarjeta-noticia">
+                    <img src="../img/noticias/mural.jpg"
+                         alt="Mural Horizontes de Investigación y Aprendizaje">
+                    <p class="fecha-noticia">13 de octubre de 2026</p>
+                    <h3>Inauguran el mural “Horizontes de Investigación y Aprendizaje”</h3>
+                    <p>
+                        El plantel inauguró un mural realizado por el
+                        Dr. J. Trinidad Hernández Barrera, obra desarrollada
+                        durante 400 horas. Su diseño incorpora elementos
+                        de la biodiversidad regional y representa el
+                        aprendizaje y la investigación.
+                    </p>
+                </article>
+
+                <!-- 13 -->
+                <article class="tarjeta-noticia">
+                    <img src="../img/noticias/salud.jpg"
+                         alt="Plática sobre alimentación y hábitos saludables">
+                    <p class="fecha-noticia">16 de octubre de 2026</p>
+                    <h3>Promueven hábitos saludables por el Día Mundial de la Alimentación</h3>
+                    <p>
+                        La nutrióloga Irisiet González Ávila impartió la
+                        plática “Lo que hacemos hoy cuenta, hábitos para
+                        una vida más saludable”, abordando temas como
+                        alimentación equilibrada, hidratación y actividad física.
+                    </p>
+                </article>
+
+                <!-- 14 -->
+                <article class="tarjeta-noticia">
+                    <img src="../img/noticias/brigada.jpg"
+                         alt="Actividades de la Brigada 033 en el ITACE">
+                    <p class="fecha-noticia">16 de octubre de 2026</p>
+                    <h3>Brigada 033 imparte actividades de desarrollo socioemocional</h3>
+                    <p>
+                        Integrantes del Centro Comunitario de Salud Mental
+                        y Adicciones (CECOSAMA) realizaron actividades
+                        dirigidas a fortalecer las habilidades
+                        socioemocionales de los estudiantes, especialmente
+                        el reconocimiento y la expresión de emociones.
+                    </p>
+                </article>
+
+                <!-- 15 -->
+                <article class="tarjeta-noticia">
+                    <img src="../img/noticias/certificados.jpg"
+                         alt="Entrega de certificados de cursos de capacitación">
+                    <p class="fecha-noticia">13 de octubre de 2026</p>
+                    <h3>Entregan certificados de cursos de capacitación del ICAT</h3>
+                    <p>
+                        Más de 180 personas recibieron certificados y
+                        constancias de capacitación en diferentes áreas,
+                        entre ellas soldadura, albañilería, carpintería,
+                        repostería, electricidad, fotografía, masaje
+                        terapéutico y manualidades.
+                    </p>
+                </article>
+
+                <!-- 16 -->
+                <article class="tarjeta-noticia">
+                    <img src="../img/noticias/1er lugar.jpg"
+                         alt="Participación del ITACE Reynosa en la colecta del Talentón 2026">
+                    <p class="fecha-noticia">12 de octubre de 2026</p>
+                    <h3>ITACE Reynosa obtiene el primer lugar en la colecta del Talentón 2026</h3>
+                    <p>
+                        El Plantel Reynosa destacó por su participación
+                        en la colecta del Talentón 2026, al aportar
+                        aproximadamente el 52 % de la recaudación total
+                        realizada entre los planteles participantes.
+                    </p>
+                </article>
+
+                <!-- 17 -->
+                <article class="tarjeta-noticia">
+                    <img src="../img/noticias/salud mental.jpg"
+                         alt="Plática por el Día Mundial de la Salud Mental">
+                    <p class="fecha-noticia">10 de octubre de 2026</p>
+                    <h3>Conmemoran el Día Mundial de la Salud Mental</h3>
+                    <p>
+                        Estudiantes de primer semestre participaron en
+                        una plática impartida por la Lic. Claudia Patricia
+                        Cruz, del Centro de Integración Juvenil, sobre
+                        autocuidado, emociones y la importancia de buscar
+                        apoyo para el bienestar emocional.
+                    </p>
+                </article>
+
+                <!-- 18 -->
+                <article class="tarjeta-noticia">
+                    <img src="../img/noticias/nenes.jpg"
+                         alt="Participación del ITACE en la Feria Infantil de Ciencia, Tecnología y Arte">
+                    <p class="fecha-noticia">8 de octubre de 2026</p>
+                    <h3>Estudiantes del ITACE participan en la XI Feria Infantil de Ciencia, Tecnología y Arte 2026</h3>
+                    <p>
+                        Alumnos y docentes del plantel asistieron a la
+                        inauguración de esta feria organizada por el
+                        Centro de Biotecnología Genómica del IPN,
+                        donde se presentaron actividades relacionadas
+                        con la ciencia, la tecnología y la robótica.
+                    </p>
+                </article>
+
+                <!-- 19 -->
+                <article class="tarjeta-noticia">
+                    <img src="../img/noticias/reconocimiento.jpg"
+                         alt="Ceremonia de honores a la bandera y reconocimientos docentes">
+                    <p class="fecha-noticia">5 de octubre de 2026</p>
+                    <h3>Reconocen a docentes y fortalecen el trabajo en equipo</h3>
+                    <p>
+                        Durante los honores a la bandera del turno
+                        vespertino se reconoció a docentes por su
+                        participación en la Reunión Estatal de Academias
+                        de Inglés. También se promovió la reflexión sobre
+                        el trabajo en equipo mediante el ejemplo de la
+                        Banda de Guerra.
+                    </p>
+                </article>
+
+                <!-- 20 -->
+                <article class="tarjeta-noticia">
+                    <img src="../img/proyectos/dual.jpg"
+                         alt="Estudiantes de Diseño Gráfico y Programación en el Sistema de Educación Dual">
+                    <p class="fecha-noticia">1 de octubre de 2026</p>
+                    <h3>Estudiantes de Diseño Gráfico y Programación se integran al Sistema de Educación Dual</h3>
+                    <p>
+                        Alumnos de las especialidades de Diseño Gráfico
+                        y Programación se incorporaron al Sistema de
+                        Educación Dual en la empresa Conceptos,
+                        dedicada al diseño gráfico y la impresión
+                        publicitaria, para fortalecer su formación
+                        mediante experiencias en el ámbito laboral.
+                    </p>
+                </article>
+
             </div>
 
             <div class="archivo-noticias">
                 <h2>Consulta más noticias</h2>
-                <p>Visita el archivo oficial para consultar las publicaciones completas y conocer otras actividades de la institución.</p>
-                <a href="https://itace.edu.mx/prensa/" target="_blank" rel="noopener noreferrer">Visitar sala de prensa del ITACE</a>
+                <p>
+                    Sigue las publicaciones oficiales para conocer
+                    más actividades, convocatorias y logros del
+                    ITACE Plantel Reynosa.
+                </p>
+                <a href="https://www.facebook.com/share/1A2aeY5s3R/?mibextid=wwXIfr"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Visitar Facebook del ITACE Plantel Reynosa
+                </a>
             </div>
+
         </section>
     </main>
 
-   <footer class="pie-pagina">
+    <footer class="pie-pagina">
         <div class="contenido-pie">
             <div class="identidad-pie">
                 <img src="../img/logo itace.jpeg" alt="Logotipo del ITACE">
@@ -106,6 +386,7 @@
                     <p>Portal académico e informativo.</p>
                 </div>
             </div>
+
             <div class="enlaces-pie">
                 <h3>Enlaces de interés</h3>
                 <a href="conocenos.html">Conoce al ITACE</a>
@@ -114,10 +395,12 @@
                 <a href="creditos.html">Créditos y fuentes</a>
             </div>
         </div>
+
         <div class="aviso-pie">
             <p>Este sitio es una propuesta académica no oficial.</p>
             <p>Proyecto escolar del grupo 502-B.</p>
         </div>
     </footer>
+
 </body>
 </html>

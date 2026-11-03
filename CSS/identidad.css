@@ -1,0 +1,458 @@
+:root {
+    --guinda: #750d2b;
+    --guinda-oscuro: #45091c;
+    --guinda-claro: #963650;
+    --dorado: #e8bd3f;
+    --dorado-claro: #f7e7a6;
+    --blanco: #ffffff;
+    --fondo: #f8f7f5;
+    --texto: #333333;
+    --gris: #686868;
+}
+/* PORTADA */
+.portada-identidad {
+    position: relative;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    padding: 70px 9%;
+    overflow: hidden;
+    background:
+        linear-gradient(90deg, rgba(69, 9, 28, .97), rgba(117, 13, 43, .78)),
+        url("../img/identidad/portada-identidad.jpg") center 40% / cover;
+}
+.portada-identidad::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 35%;
+    height: 7px;
+    background: var(--dorado);
+}
+.texto-portada {
+    position: relative;
+    z-index: 1;
+    max-width: 680px;
+    color: var(--blanco);
+}
+.texto-portada span,
+.etiqueta-identidad {
+    display: inline-block;
+    color: var(--dorado);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.texto-portada h2 {
+    margin: 15px 0;
+    font-size: clamp(38px, 6vw, 68px);
+    line-height: 1.05;
+}
+.texto-portada p {
+    max-width: 550px;
+    font-size: 17px;
+    line-height: 1.8;
+}
+/* INTRODUCCIÓN */
+.introduccion-identidad {
+    max-width: 950px;
+    margin: auto;
+    padding: 85px 25px;
+    text-align: center;
+}
+.introduccion-identidad h2,
+.encabezado-seccion h2 {
+    margin: 15px 0;
+    color: var(--guinda-oscuro);
+    font-size: clamp(27px, 4vw, 38px);
+}
+.introduccion-identidad p,
+.encabezado-seccion p {
+    color: var(--gris);
+    font-size: 16px;
+    line-height: 1.9;
+}
+/* ENCABEZADOS DE SECCIÓN */
+.encabezado-seccion {
+    max-width: 760px;
+    margin: 0 auto 45px;
+    text-align: center;
+    padding: 0 20px;
+}
+/* SÍMBOLOS */
+.simbolos-identidad {
+    padding: 80px 7%;
+    background: var(--fondo);
+}
+.contenedor-simbolos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+.tarjeta-simbolo {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 30px;
+    background: var(--blanco);
+    border-radius: 12px;
+    border-bottom: 4px solid var(--dorado);
+    box-shadow: 0 8px 25px rgba(69, 9, 28, .08);
+}
+.tarjeta-simbolo img {
+    width: 115px;
+    height: 115px;
+    object-fit: contain;
+}
+.tarjeta-simbolo h3 {
+    color: var(--guinda);
+    margin-bottom: 10px;
+}
+.tarjeta-simbolo p {
+    color: var(--gris);
+    line-height: 1.7;
+    font-size: 14px;
+}
+.simbolo-decorativo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    background: var(--guinda);
+    color: var(--dorado);
+    font-size: 22px;
+    font-weight: 800;
+    border: 5px solid var(--dorado-claro);
+}
+/* VALORES */
+.valores-identidad {
+    padding: 85px 7%;
+    background: var(--blanco);
+}
+.rejilla-valores {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1150px;
+    margin: auto;
+}
+.tarjeta-valor {
+    padding: 30px 24px;
+    background: var(--fondo);
+    border-radius: 10px;
+    border-top: 4px solid var(--guinda);
+    transition: transform .3s, box-shadow .3s;
+}
+.tarjeta-valor:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 25px rgba(69, 9, 28, .12);
+}
+.tarjeta-valor span {
+    color: var(--dorado);
+    font-size: 30px;
+    font-weight: 800;
+}
+.tarjeta-valor h3 {
+    margin: 15px 0 10px;
+    color: var(--guinda);
+}
+.tarjeta-valor p {
+    color: var(--gris);
+    font-size: 14px;
+    line-height: 1.7;
+}
+/* SIGNIFICADO DE LOS HIMNOS */
+.significado-himnos {
+    padding: 85px 8%;
+    background: #f4eeee;
+}
+.contenido-significado {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 35px;
+    align-items: stretch;
+    max-width: 1100px;
+    margin: auto;
+}
+.texto-significado {
+    padding: 30px;
+}
+.texto-significado h3 {
+    color: var(--guinda);
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.texto-significado p {
+    color: var(--gris);
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 15px;
+}
+.idea-significado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    color: var(--blanco);
+    background: linear-gradient(145deg, var(--guinda), var(--guinda-oscuro));
+    border-radius: 12px;
+    border-left: 6px solid var(--dorado);
+}
+.idea-significado span {
+    color: var(--dorado);
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+.idea-significado h3 {
+    margin: 20px 0 12px;
+    font-size: 27px;
+}
+.idea-significado p {
+    line-height: 1.8;
+    font-size: 15px;
+}
+/* HIMNOS */
+.seccion-himnos {
+    padding: 85px 7%;
+    background: var(--blanco);
+}
+.contenedor-himnos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1150px;
+    margin: auto;
+}
+.tarjeta-himno {
+    position: relative;
+    padding: 35px;
+    background: var(--fondo);
+    border-radius: 12px;
+    border-top: 5px solid var(--guinda);
+    box-shadow: 0 8px 25px rgba(69, 9, 28, .08);
+}
+.numero-himno {
+    color: var(--dorado);
+    font-size: 38px;
+    font-weight: 800;
+}
+.tipo-himno {
+    display: block;
+    margin-top: 15px;
+    color: var(--guinda-claro);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+.informacion-himno h3 {
+    margin: 10px 0 15px;
+    color: var(--guinda-oscuro);
+    font-size: 25px;
+}
+.informacion-himno p {
+    color: var(--gris);
+    line-height: 1.8;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+.reproductor-himno video {
+    display: block;
+    width: 100%;
+    max-height: 300px;
+    background: #1b1b1b;
+    border-radius: 8px;
+}
+.credito-himno {
+    margin-top: 15px;
+    color: var(--gris);
+    font-size: 12px;
+    line-height: 1.6;
+}
+/* EXPRESIONES DE IDENTIDAD */
+.expresiones-identidad {
+    padding: 85px 7%;
+    background: var(--fondo);
+}
+.contenedor-expresiones {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1200px;
+    margin: auto;
+}
+.tarjeta-expresion {
+    overflow: hidden;
+    background: var(--blanco);
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(69, 9, 28, .09);
+    transition: transform .3s;
+}
+.tarjeta-expresion:hover {
+    transform: translateY(-6px);
+}
+.video-expresion {
+    background: var(--guinda-oscuro);
+}
+.video-expresion video {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    background: #1b1b1b;
+}
+.informacion-expresion {
+    padding: 25px;
+}
+.informacion-expresion span {
+    color: var(--guinda-claro);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.informacion-expresion h3 {
+    margin: 12px 0;
+    color: var(--guinda-oscuro);
+    font-size: 22px;
+}
+.informacion-expresion p {
+    color: var(--gris);
+    font-size: 14px;
+    line-height: 1.8;
+}
+/* CIERRE */
+.cierre-identidad {
+    position: relative;
+    padding: 95px 25px;
+    overflow: hidden;
+    text-align: center;
+    color: var(--blanco);
+    background: linear-gradient(120deg, var(--guinda-oscuro), var(--guinda));
+}
+.cierre-identidad::before {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: -130px;
+    right: -50px;
+    border: 35px solid rgba(232, 189, 63, .15);
+    border-radius: 50%;
+}
+.contenido-cierre {
+    position: relative;
+    z-index: 1;
+    max-width: 750px;
+    margin: auto;
+}
+.contenido-cierre span {
+    color: var(--dorado);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+.contenido-cierre h2 {
+    margin: 18px 0;
+    font-size: clamp(30px, 5vw, 45px);
+}
+.contenido-cierre p {
+    font-size: 16px;
+    line-height: 1.9;
+}
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .rejilla-valores {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contenedor-expresiones {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contenedor-simbolos {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 650px) {
+    .portada-identidad {
+        min-height: 420px;
+        padding: 50px 7%;
+        background-position: center;
+    }
+    .introduccion-identidad,
+    .simbolos-identidad,
+    .valores-identidad,
+    .significado-himnos,
+    .seccion-himnos,
+    .expresiones-identidad {
+        padding: 60px 6%;
+    }
+    .rejilla-valores,
+    .contenedor-himnos,
+    .contenedor-expresiones,
+    .contenido-significado {
+        grid-template-columns: 1fr;
+    }
+    .tarjeta-simbolo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .tarjeta-himno {
+        padding: 25px;
+    }
+    .idea-significado {
+        padding: 30px;
+    }
+    .texto-significado {
+        padding: 10px 0;
+    }
+}
+
+/* Nota sobre los videos */
+.nota-videos {
+    position: relative;
+    margin: 25px auto 10px;
+    padding: 20px 25px 20px 55px;
+    max-width: 900px;
+    background: #f8f3f4;
+    border-left: 5px solid var(--guinda);
+    border-radius: 8px;
+    color: var(--texto);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    text-align: left;
+    box-shadow: 0 4px 14px rgba(69, 9, 28, 0.08);
+}
+.nota-videos::before {
+    content: "i";
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--guinda);
+    color: var(--blanco);
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 15px;
+}
+@media (max-width: 650px) {
+    .nota-videos {
+        padding: 18px 16px 18px 45px;
+        font-size: 0.88rem;
+    }
+    .nota-videos::before {
+        left: 12px;
+    }
+}

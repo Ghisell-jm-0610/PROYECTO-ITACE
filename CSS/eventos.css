@@ -1,0 +1,405 @@
+.eventos {
+    background: #f8f7f5;
+    color: #333;
+    overflow: hidden;
+}
+
+/* Banner de eventos */
+.portada-eventos {
+    position: relative;
+    min-height: 480px;
+    height: clamp(480px, 56vw, 620px);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 60px 8%;
+    background: #45091c;
+}
+
+/* Fotografía */
+.portada-eventos img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 40%;
+}
+
+/* Capa de color */
+.portada-eventos::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(
+        90deg,
+        rgba(69, 9, 28, .96) 0%,
+        rgba(69, 9, 28, .82) 38%,
+        rgba(69, 9, 28, .25) 75%,
+        rgba(69, 9, 28, .08) 100%
+    );
+}
+
+/* Detalle decorativo */
+.portada-eventos::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    bottom: 0;
+    width: 34%;
+    height: 7px;
+    background: #e8bd3f;
+}
+
+/* Texto */
+.texto-portada-eventos {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    max-width: 650px;
+    color: #fff;
+}
+
+.texto-portada-eventos h1 {
+    max-width: 600px;
+    margin: 0 0 22px;
+    color: #fff;
+    font-size: clamp(2.8rem, 6vw, 5rem);
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -1.5px;
+    text-transform: uppercase;
+}
+
+.texto-portada-eventos p {
+    max-width: 510px;
+    margin: 0;
+    color: #fff;
+    font-size: 1.12rem;
+    line-height: 1.8;
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+    .portada-eventos {
+        min-height: 430px;
+        height: 70vh;
+        padding: 45px 7%;
+    }
+
+    .portada-eventos img {
+        object-position: 60% center;
+    }
+
+    .portada-eventos::before {
+        background: linear-gradient(
+            90deg,
+            rgba(69, 9, 28, .92),
+            rgba(69, 9, 28, .55)
+        );
+    }
+
+    .texto-portada-eventos h1 {
+        font-size: clamp(2.5rem, 11vw, 3.5rem);
+    }
+
+    .texto-portada-eventos p {
+        font-size: 1rem;
+    }
+}
+/* Introducción */
+.introduccion-eventos {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 75px 25px 65px;
+    text-align: center;
+}
+
+.subtitulo-eventos {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: #963650;
+    font-size: .85rem;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.introduccion-eventos h2 {
+    margin-bottom: 20px;
+    color: #750d2b;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 800;
+}
+
+.introduccion-eventos p {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #686868;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+/* Agenda por meses */
+.agenda-eventos {
+    padding: 65px 7% 90px;
+    background:
+        radial-gradient(circle at 5% 10%, rgba(232, 189, 63, .13), transparent 25%),
+        #fff;
+}
+
+.encabezado-agenda {
+    max-width: 850px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.encabezado-agenda h2 {
+    margin-bottom: 15px;
+    color: #750d2b;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 800;
+}
+
+.encabezado-agenda p {
+    color: #686868;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.nota-fechas {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 10px 20px;
+    border: 1px solid #e8bd3f;
+    border-radius: 30px;
+    background: #fffaf0;
+    color: #750d2b;
+    font-size: .9rem;
+    font-weight: 700;
+}
+
+/* Archivo mensual */
+.archivo-eventos {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.mes-eventos {
+    position: relative;
+    margin-bottom: 65px;
+}
+
+.encabezado-mes {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 28px;
+    padding: 18px 25px;
+    border-left: 7px solid #e8bd3f;
+    border-radius: 0 12px 12px 0;
+    background: linear-gradient(100deg, #750d2b, #45091c);
+    box-shadow: 0 8px 20px rgba(69, 9, 28, .13);
+}
+
+.encabezado-mes h3 {
+    margin: 0;
+    color: #fff;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.encabezado-mes p {
+    margin: 0;
+    color: #f7e7a6;
+    font-size: .9rem;
+}
+
+/* Tarjetas */
+.rejilla-eventos {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.tarjeta-evento {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    overflow: hidden;
+    border: 1px solid #eee5e7;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 8px 25px rgba(69, 9, 28, .08);
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.tarjeta-evento:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 16px 35px rgba(69, 9, 28, .16);
+}
+
+.tarjeta-evento img {
+    display: block;
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    transition: transform .4s ease;
+}
+
+.tarjeta-evento:hover img {
+    transform: scale(1.04);
+}
+
+.contenido-evento {
+    position: relative;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 23px;
+}
+
+.fecha-evento {
+    display: inline-block;
+    margin-bottom: 13px;
+    padding: 7px 13px;
+    border-radius: 5px;
+    background: #f7e7a6;
+    color: #750d2b;
+    font-size: .82rem;
+    font-weight: 800;
+}
+
+.etiqueta-evento {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #963650;
+    font-size: .75rem;
+    font-weight: 800;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+}
+
+.contenido-evento h4 {
+    margin: 0 0 12px;
+    color: #750d2b;
+    font-size: 1.2rem;
+    line-height: 1.35;
+    font-weight: 800;
+}
+
+.contenido-evento p {
+    margin: 0;
+    color: #686868;
+    font-size: .94rem;
+    line-height: 1.7;
+}
+
+/* Participación estudiantil */
+.participacion-eventos {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 350px;
+    padding: 65px 8%;
+    background:
+        linear-gradient(90deg, rgba(69, 9, 28, .94), rgba(117, 13, 43, .78)),
+        url("../img/participacion-estudiantil.jpg") center/cover no-repeat;
+    text-align: center;
+}
+
+.participacion-eventos > div {
+    max-width: 750px;
+    color: #fff;
+}
+
+.participacion-eventos .subtitulo-eventos {
+    color: #f7e7a6;
+}
+
+.participacion-eventos h2 {
+    margin-bottom: 18px;
+    color: #fff;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 800;
+}
+
+.participacion-eventos p {
+    color: #fff;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+/* Adaptación a tabletas */
+@media (max-width: 950px) {
+    .rejilla-eventos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .portada-eventos {
+        min-height: 380px;
+    }
+
+    .agenda-eventos {
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+}
+
+/* Adaptación a celulares */
+@media (max-width: 600px) {
+    .portada-eventos {
+        min-height: 340px;
+        padding: 55px 7%;
+        background-position: center;
+    }
+
+    .texto-portada-eventos p {
+        font-size: 1rem;
+    }
+
+    .introduccion-eventos {
+        padding: 55px 22px;
+    }
+
+    .agenda-eventos {
+        padding: 50px 20px 65px;
+    }
+
+    .encabezado-agenda {
+        margin-bottom: 38px;
+    }
+
+    .encabezado-mes {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 6px;
+        padding: 16px 18px;
+    }
+
+    .rejilla-eventos {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .tarjeta-evento img {
+        height: 220px;
+    }
+
+    .contenido-evento {
+        padding: 20px;
+    }
+
+    .participacion-eventos {
+        min-height: 320px;
+        padding: 50px 23px;
+    }
+}
