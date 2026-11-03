@@ -4,11 +4,19 @@
     overflow: hidden;
     background: #f8f7f5;
     color: #333;
+    box-sizing: border-box;
+}
+
+.admisiones *,
+.admisiones *::before,
+.admisiones *::after {
+    box-sizing: border-box;
 }
 
 .admisiones img {
     display: block;
     width: 100%;
+    max-width: 100%;
     object-fit: cover;
 }
 
@@ -52,6 +60,7 @@
 .imagen-portada-admisiones {
     position: absolute;
     inset: 0;
+    width: 100%;
     height: 100%;
     object-fit: cover;
     opacity: 0.58;
@@ -231,6 +240,7 @@
 }
 
 .imagen-requisitos {
+    min-width: 0;
     background: #fff;
     padding: 12px;
     box-shadow: 0 8px 25px rgba(69, 9, 28, 0.10);
@@ -246,6 +256,10 @@
     padding: 15px 8px 5px;
 }
 
+.lista-requisitos {
+    min-width: 0;
+}
+
 .lista-requisitos h3 {
     color: #750d2b;
     font-size: 26px;
@@ -256,6 +270,7 @@
 .lista-inscripcion ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .lista-requisitos li,
@@ -267,6 +282,7 @@
     border-left: 4px solid #e8bd3f;
     color: #444;
     line-height: 1.6;
+    overflow-wrap: anywhere;
 }
 
 .lista-requisitos li::before,
@@ -284,6 +300,7 @@
     background: #f7e7a6;
     border-left: 5px solid #750d2b;
     line-height: 1.7;
+    overflow-wrap: anywhere;
 }
 
 .nota-requisitos strong {
@@ -308,6 +325,10 @@
     margin: auto;
 }
 
+.lista-inscripcion {
+    min-width: 0;
+}
+
 .lista-inscripcion h3 {
     color: #750d2b;
     font-size: 25px;
@@ -315,6 +336,7 @@
 }
 
 .imagen-inscripcion {
+    min-width: 0;
     background: #f8f7f5;
     padding: 12px;
 }
@@ -327,6 +349,7 @@
     padding: 25px;
     background: #750d2b;
     color: #fff;
+    overflow-wrap: anywhere;
 }
 
 .aviso-inscripcion h3 {
@@ -358,6 +381,7 @@
     display: flex;
     align-items: flex-start;
     gap: 22px;
+    min-width: 0;
     padding: 30px;
     background: #fff;
     border-radius: 5px;
@@ -418,10 +442,12 @@
 .enlace-convocatoria {
     display: block;
     width: fit-content;
+    max-width: 100%;
     margin: 22px auto 0;
     color: #f7e7a6;
     font-weight: 700;
     text-decoration: none;
+    overflow-wrap: anywhere;
 }
 
 .enlace-convocatoria:hover {
@@ -444,6 +470,7 @@
 }
 
 .tarjeta-tramite {
+    min-width: 0;
     overflow: hidden;
     background: #f8f7f5;
     box-shadow: 0 7px 22px rgba(69, 9, 28, 0.09);
@@ -478,6 +505,7 @@
     color: #750d2b;
     text-decoration: none;
     font-weight: 800;
+    overflow-wrap: anywhere;
 }
 
 .contenido-tarjeta-tramite a:hover {
@@ -493,6 +521,10 @@
     gap: 55px;
     padding: 90px 5%;
     background: #f8f7f5;
+}
+
+.imagen-orientacion-admisiones {
+    min-width: 0;
 }
 
 .imagen-orientacion-admisiones img {
@@ -527,6 +559,7 @@
 }
 
 .dato-admision {
+    min-width: 0;
     padding: 32px;
     background: #f8f7f5;
     border-top: 5px solid #750d2b;
@@ -587,96 +620,175 @@
 }
 
 
-/* RESPONSIVE */
+/* TABLET */
 @media (max-width: 900px) {
     .presentacion-admisiones,
     .contenido-requisitos,
     .contenido-inscripcion,
     .orientacion-admisiones {
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr);
         gap: 35px;
     }
 
     .tarjetas-etapas-admision,
     .tarjetas-datos-admisiones {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .imagen-presentacion-admisiones img {
-        height: 380px;
-    }
-
+    .imagen-presentacion-admisiones img,
     .imagen-requisitos img {
-        height: 350px;
-    }
-
-    .texto-presentacion-admisiones h2,
-    .texto-orientacion-admisiones h2 {
-        font-size: 30px;
+        height: 320px;
     }
 }
 
+
+/* CELULARES */
 @media (max-width: 600px) {
+    .admisiones {
+        width: 100%;
+        overflow-x: clip;
+    }
+
     .portada-admisiones {
-        min-height: 450px;
+        min-height: 430px;
     }
 
     .texto-portada-admisiones {
-        padding: 70px 0;
+        width: 90%;
+        padding: 60px 0;
     }
 
     .texto-portada-admisiones h1 {
-        font-size: 35px;
+        font-size: 32px;
+        line-height: 1.2;
     }
 
     .texto-portada-admisiones > p:not(.etiqueta-seccion) {
         font-size: 15px;
     }
 
-    .encabezado-admisiones h2 {
-        font-size: 27px;
+    .encabezado-admisiones {
+        margin-bottom: 30px;
+    }
+
+    .encabezado-admisiones h2,
+    .contenido-convocatorias h2 {
+        font-size: 26px;
     }
 
     .presentacion-admisiones,
+    .contenido-requisitos,
+    .contenido-inscripcion,
+    .orientacion-admisiones {
+        width: 90%;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 25px;
+        margin: 55px auto;
+    }
+
     .informacion-aspirantes,
     .requisitos-admisiones,
     .inscripcion-admisiones,
     .proceso-admision,
     .tramites-admisiones,
-    .orientacion-admisiones,
-    .datos-admisiones {
-        padding-top: 60px;
-        padding-bottom: 60px;
+    .datos-admisiones,
+    .convocatorias-admisiones {
+        padding: 55px 5%;
     }
 
     .tarjetas-etapas-admision,
     .linea-proceso-admision,
     .tarjetas-tramites,
     .tarjetas-datos-admisiones {
-        grid-template-columns: 1fr;
-    }
-
-    .texto-portada-admisiones h1,
-    .texto-cierre-admisiones h2 {
-        font-size: 32px;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 18px;
     }
 
     .imagen-presentacion-admisiones img,
     .imagen-requisitos img,
     .imagen-inscripcion img,
-    .imagen-orientacion-admisiones img {
-        height: 260px;
+    .imagen-orientacion-admisiones img,
+    .tarjeta-tramite img {
+        width: 100%;
+        height: 240px;
+        object-fit: cover;
+    }
+
+    .texto-presentacion-admisiones h2,
+    .texto-orientacion-admisiones h2 {
+        font-size: 27px;
+    }
+
+    .lista-requisitos h3,
+    .lista-inscripcion h3 {
+        font-size: 22px;
+    }
+
+    .lista-requisitos li,
+    .lista-inscripcion li {
+        padding: 12px 12px 12px 32px;
+        overflow-wrap: anywhere;
+    }
+
+    .nota-requisitos,
+    .aviso-inscripcion {
+        padding: 17px;
     }
 
     .paso-admision {
-        padding: 22px;
+        padding: 20px 15px;
+        gap: 14px;
     }
 
-    .contenido-convocatorias h2 {
+    .numero-paso {
+        width: 42px;
+        height: 42px;
+        font-size: 17px;
+    }
+
+    .contenido-tarjeta-tramite {
+        padding: 20px;
+    }
+
+    .texto-cierre-admisiones h2 {
         font-size: 29px;
+    }
+
+    .boton-admisiones {
+        max-width: 100%;
+        text-align: center;
+        padding: 13px 18px;
+    }
+
+    .dato-admision {
+        padding: 25px;
+        overflow-wrap: anywhere;
+    }
+
+    .enlace-convocatoria {
+        max-width: 100%;
+        overflow-wrap: anywhere;
     }
 }
 
+
+/* CELULARES PEQUEÑOS */
+@media (max-width: 380px) {
+    .texto-portada-admisiones h1 {
+        font-size: 28px;
+    }
+
+    .paso-admision {
+        flex-direction: column;
+    }
+
+    .texto-cierre-admisiones h2 {
+        font-size: 26px;
+    }
+}
+
+
+/* ACCESIBILIDAD */
 @media (prefers-reduced-motion: reduce) {
     .boton-admisiones,
     .enlace-admisiones,
@@ -684,56 +796,4 @@
     .tarjeta-tramite {
         transition: none;
     }
-}
-
-/* Ajustes para celulares */
-@media (max-width: 768px) {
-
-    * {
-        box-sizing: border-box;
-    }
-
-    html, body {
-        width: 100%;
-        overflow-x: hidden;
-    }
-
-    main, section, article, .contenedor, .container {
-        max-width: 100%;
-        width: 100%;
-    }
-
-    img, iframe, video {
-        max-width: 100%;
-        height: auto;
-    }
-
-    form {
-        width: 100%;
-        max-width: 100%;
-        padding: 15px;
-    }
-
-    input, select, textarea, button {
-        max-width: 100%;
-        width: 100%;
-    }
-
-    h1 {
-        font-size: 1.8rem;
-    }
-
-    h2 {
-        font-size: 1.4rem;
-    }
-
-    p {
-        overflow-wrap: break-word;
-    }
-
-    .contenedor, .container {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
 }
